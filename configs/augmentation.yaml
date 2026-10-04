@@ -1,0 +1,19 @@
+augmentation:
+  window_length: 60
+  training_stride: 30
+  evaluation_stride: 60
+  train:
+    start_date: "2020-01-01"
+    end_date: "2024-12-31"
+  validation:
+    start_date: "2025-01-01"
+    end_date: "2025-12-31"
+  test:
+    start_date: "2026-01-01"
+    end_date: null
+  regime_source: "window_end"
+  null_handling: "reject_active_feature_nulls"
+  ignored_null_columns:
+    - repo_rate
+    - cpi
+  seed: 42

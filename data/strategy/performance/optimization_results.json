@@ -1,0 +1,1285 @@
+{
+  "methodology": {
+    "search_split": "train",
+    "comparison_split": "validation",
+    "excluded_split": "test",
+    "top_train_candidates": 3,
+    "objective": "1.0*sharpe + 0.5*cumulative_return - 1.0*max_drawdown",
+    "selection": "highest equal-weight mean of TRAIN and VALIDATION objective"
+  },
+  "candidate_results": [
+    {
+      "strategy": "breakout",
+      "candidate_id": "00d71170a6f0984015b2011fc85d645b872b5ae38b7238dbbde764bd208d429b",
+      "params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -3.202553536756693,
+      "cumulative_return": -0.8215817506587262,
+      "cagr": -0.2916182605970439,
+      "volatility": 0.17418258314962193,
+      "sharpe": -1.918608583964394,
+      "max_drawdown": 0.8731540774629356,
+      "win_rate": 0.3413897280966767,
+      "number_of_trades": 1986
+    },
+    {
+      "strategy": "breakout",
+      "candidate_id": "95d14fa89e5b6b573171fa3a3e26fc9e28dbf13c3b2568142d4f2d1e686b01e4",
+      "params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 1.5
+      },
+      "is_baseline": true,
+      "split": "train",
+      "objective": -2.2489313631127277,
+      "cumulative_return": -0.6168337446869647,
+      "cagr": -0.17459699979905485,
+      "volatility": 0.1518391854215849,
+      "sharpe": -1.2059510548974623,
+      "max_drawdown": 0.734563435871783,
+      "win_rate": 0.36722306525037934,
+      "number_of_trades": 1318
+    },
+    {
+      "strategy": "breakout",
+      "candidate_id": "e621fade67b1d170a610cf45f74dd2930dc81e60e42a027387228c6312f63624",
+      "params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 2.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.9615542014486433,
+      "cumulative_return": -0.5214443606335362,
+      "cagr": -0.1370657163107365,
+      "volatility": 0.12543055606505707,
+      "sharpe": -1.128358886348368,
+      "max_drawdown": 0.5724731347835073,
+      "win_rate": 0.38452520515826494,
+      "number_of_trades": 853
+    },
+    {
+      "strategy": "breakout",
+      "candidate_id": "00d71170a6f0984015b2011fc85d645b872b5ae38b7238dbbde764bd208d429b",
+      "params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 1.0
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -4.511911541985815,
+      "cumulative_return": -0.3926839864110019,
+      "cagr": -0.39372317921621247,
+      "volatility": 0.12714079721439364,
+      "sharpe": -3.9022960957200845,
+      "max_drawdown": 0.4132734530602299,
+      "win_rate": 0.33418367346938777,
+      "number_of_trades": 392
+    },
+    {
+      "strategy": "breakout",
+      "candidate_id": "95d14fa89e5b6b573171fa3a3e26fc9e28dbf13c3b2568142d4f2d1e686b01e4",
+      "params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 1.5
+      },
+      "is_baseline": true,
+      "split": "validation",
+      "objective": -4.139184510843555,
+      "cumulative_return": -0.3051433522011031,
+      "cagr": -0.30601149886554035,
+      "volatility": 0.09900918100477986,
+      "sharpe": -3.669076961273988,
+      "max_drawdown": 0.317535873469016,
+      "win_rate": 0.3481781376518219,
+      "number_of_trades": 247
+    },
+    {
+      "strategy": "breakout",
+      "candidate_id": "e621fade67b1d170a610cf45f74dd2930dc81e60e42a027387228c6312f63624",
+      "params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 2.0
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -2.7705706150946234,
+      "cumulative_return": -0.17053868182993592,
+      "cagr": -0.17107110594802577,
+      "volatility": 0.07443904478773038,
+      "sharpe": -2.5038800557099603,
+      "max_drawdown": 0.18142121846969528,
+      "win_rate": 0.38311688311688313,
+      "number_of_trades": 154
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "00b50a580602206daa23fbaba0481d0ec37df1395bdd9444876614425d0dde60",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.166629405369454,
+      "cumulative_return": -0.6354569397392906,
+      "cagr": -0.18278229562733617,
+      "volatility": 0.16157251105062057,
+      "sharpe": -1.1826593325710908,
+      "max_drawdown": 0.6662416029287177,
+      "win_rate": 0.5253399258343634,
+      "number_of_trades": 809
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "0b6c7241ff8c46ceef4a1d8c62976927ff7b9432bf1158b07810082080b908d8",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 70,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.529373510117309,
+      "cumulative_return": -0.6926359446383112,
+      "cagr": -0.2102009876489339,
+      "volatility": 0.15410669439623392,
+      "sharpe": -1.4715011912057034,
+      "max_drawdown": 0.7115543465924501,
+      "win_rate": 0.470517448856799,
+      "number_of_trades": 831
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "0b93a509367d130c365fc9031d9c49b65b4b9007ef01c6868977d8b5d589d45d",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 70,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.728435495622495,
+      "cumulative_return": -0.7594621655532273,
+      "cagr": -0.2479967201776364,
+      "volatility": 0.1743688522104233,
+      "sharpe": -1.5664342967887706,
+      "max_drawdown": 0.7822701160571108,
+      "win_rate": 0.5034079844206426,
+      "number_of_trades": 1027
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "1f71af1d13ca0e51b0c3051578dcefccbf936b8225a6eee576d017e41d3a4c10",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 70,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.160416678138084,
+      "cumulative_return": -0.6008554444439149,
+      "cagr": -0.1678241275522182,
+      "volatility": 0.1451793540555839,
+      "sharpe": -1.2067846681911705,
+      "max_drawdown": 0.6532042877249558,
+      "win_rate": 0.49506346967559944,
+      "number_of_trades": 709
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "2f5699d4a541f1a782f6888d44fbf0c80ef31598b77f50ab48450875a5df365b",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 70,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.5455683043003914,
+      "cumulative_return": -0.4208090801169335,
+      "cagr": -0.10348439283223376,
+      "volatility": 0.12467997933328147,
+      "sharpe": -0.8258015965379695,
+      "max_drawdown": 0.509362167703955,
+      "win_rate": 0.5058823529411764,
+      "number_of_trades": 595
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "30f20405550fe1225e9ef168fa2b95d069d1a5cb119cc3a41dd4c94b11de91db",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 70,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.277353395228133,
+      "cumulative_return": -0.6492949548161573,
+      "cagr": -0.18908386418086742,
+      "volatility": 0.1581503434011792,
+      "sharpe": -1.263939870195006,
+      "max_drawdown": 0.6887660476250484,
+      "win_rate": 0.5120350109409191,
+      "number_of_trades": 914
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "3aaa3a03242aba0a9cb67470253adc26dd8b95fb548c8c792448a380c449a636",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.8931705708730144,
+      "cumulative_return": -0.5368319965713051,
+      "cagr": -0.14268868214719832,
+      "volatility": 0.1407081678030154,
+      "sharpe": -1.0354954311418707,
+      "max_drawdown": 0.5892591414454913,
+      "win_rate": 0.5042735042735043,
+      "number_of_trades": 585
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "5ee15e43ccfe3457528f3109fc5f52b8aeae9c559f1f367df4a5e9966e6037f9",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.5785798078118534,
+      "cumulative_return": -0.4685191760792722,
+      "cagr": -0.11876851958146728,
+      "volatility": 0.14349882687937088,
+      "sharpe": -0.8215144562721013,
+      "max_drawdown": 0.522805763500116,
+      "win_rate": 0.5402298850574713,
+      "number_of_trades": 696
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "611c87b6b47e7e675cf92e4d9b8849f3d255b3e6eba46baa0909cb7bc49c88c7",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 75,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.5124773047720654,
+      "cumulative_return": -0.7187418193804385,
+      "cagr": -0.22409964981405084,
+      "volatility": 0.1695870007509658,
+      "sharpe": -1.4285811328562275,
+      "max_drawdown": 0.7245252622256189,
+      "win_rate": 0.4989247311827957,
+      "number_of_trades": 930
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "6a370e9a94c5bf0375dee8f97909fe2ad7bc70f3d4855fe718e5a3c63f0b2434",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.5022712210177938,
+      "cumulative_return": -0.41515252679365555,
+      "cagr": -0.1017398263900462,
+      "volatility": 0.12261511529321681,
+      "sharpe": -0.8257702126811858,
+      "max_drawdown": 0.4689247449397803,
+      "win_rate": 0.4934579439252336,
+      "number_of_trades": 535
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "73a6652f314f8514431b3f51f415f7191d90f732db1d51b93a2633f29b92bfd1",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.8283631860476515,
+      "cumulative_return": -0.5374920079768055,
+      "cagr": -0.1429331876167832,
+      "volatility": 0.14636198876187267,
+      "sharpe": -0.9950554710737122,
+      "max_drawdown": 0.5645617109855365,
+      "win_rate": 0.5197368421052632,
+      "number_of_trades": 760
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "74dbd8aa4ae3bcc702f873f7d95d642b80fb3d063c6e4ddbe4603df0d5544900",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.1973815531782064,
+      "cumulative_return": -0.3279094867879999,
+      "cagr": -0.07640658545067225,
+      "volatility": 0.11911069323287389,
+      "sharpe": -0.6170370418246053,
+      "max_drawdown": 0.41638976795960114,
+      "win_rate": 0.5201698513800425,
+      "number_of_trades": 471
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "bd1f47689de3369088171d4c915ee3c23614ef89bb972189c64814359b5f29d7",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 70,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.4850453746055194,
+      "cumulative_return": -0.6954438316683452,
+      "cagr": -0.21164951047841418,
+      "volatility": 0.16053825306570166,
+      "sharpe": -1.420798903610747,
+      "max_drawdown": 0.7165245551605997,
+      "win_rate": 0.49744114636642783,
+      "number_of_trades": 977
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "c4afa55076f811e557efbcab7993abaa70667847437ca6c50fa05dfc2c228b85",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 70,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.818630263755758,
+      "cumulative_return": -0.4959924519182878,
+      "cagr": -0.12807473870565755,
+      "volatility": 0.12787045594119767,
+      "sharpe": -1.0223958143537157,
+      "max_drawdown": 0.5482382234428984,
+      "win_rate": 0.48558421851289835,
+      "number_of_trades": 659
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "c50eb9f0010cd0b77feaf350511678336f5619f8fa0d8d915b6255eb0a6bbcb8",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 75,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -2.298988005754328,
+      "cumulative_return": -0.6433409323696866,
+      "cagr": -0.18634856697462487,
+      "volatility": 0.1501811174050726,
+      "sharpe": -1.3133393244254332,
+      "max_drawdown": 0.6639782151440514,
+      "win_rate": 0.4738330975954738,
+      "number_of_trades": 707
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "fe66c597052228518a4b2ab68b8597711abc4a2d8691053c3b7a995db1b09615",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 70,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": true,
+      "split": "train",
+      "objective": -3.021548685581258,
+      "cumulative_return": -0.8150065095656431,
+      "cagr": -0.2864716677619641,
+      "volatility": 0.18124834519848243,
+      "sharpe": -1.7934072614473586,
+      "max_drawdown": 0.8206381693510779,
+      "win_rate": 0.4838709677419355,
+      "number_of_trades": 1147
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "2f5699d4a541f1a782f6888d44fbf0c80ef31598b77f50ab48450875a5df365b",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 70,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -0.6722058611643519,
+      "cumulative_return": -0.025771751987035407,
+      "cagr": -0.025859099617050574,
+      "volatility": 0.04254826865499026,
+      "sharpe": -0.5998198094837135,
+      "max_drawdown": 0.05950017568712063,
+      "win_rate": 0.43820224719101125,
+      "number_of_trades": 89
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "6a370e9a94c5bf0375dee8f97909fe2ad7bc70f3d4855fe718e5a3c63f0b2434",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -0.5142674182784568,
+      "cumulative_return": -0.025390851961501038,
+      "cagr": -0.025476925567304742,
+      "volatility": 0.05326532057951332,
+      "sharpe": -0.4620268326667999,
+      "max_drawdown": 0.039545159630906435,
+      "win_rate": 0.43373493975903615,
+      "number_of_trades": 83
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "74dbd8aa4ae3bcc702f873f7d95d642b80fb3d063c6e4ddbe4603df0d5544900",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": 0.10941787282642423,
+      "cumulative_return": 0.0043129816229035,
+      "cagr": 0.004327824689954962,
+      "volatility": 0.037560391617792864,
+      "sharpe": 0.13463879137306045,
+      "max_drawdown": 0.027377409358087967,
+      "win_rate": 0.4507042253521127,
+      "number_of_trades": 71
+    },
+    {
+      "strategy": "mean_reversion",
+      "candidate_id": "fe66c597052228518a4b2ab68b8597711abc4a2d8691053c3b7a995db1b09615",
+      "params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 70,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.0
+      },
+      "is_baseline": true,
+      "split": "validation",
+      "objective": -1.0290685634068066,
+      "cumulative_return": -0.09267687539407021,
+      "cagr": -0.09297985774431172,
+      "volatility": 0.10942285754875374,
+      "sharpe": -0.8446317623987598,
+      "max_drawdown": 0.13809836331101177,
+      "win_rate": 0.49074074074074076,
+      "number_of_trades": 216
+    },
+    {
+      "strategy": "momentum",
+      "candidate_id": "51d31d66f074f1bbf9760622ffe09914cdea9f9a7f96276119c225c2a8f1fedd",
+      "params": {
+        "lookback_days": 20,
+        "threshold": 0.05
+      },
+      "is_baseline": true,
+      "split": "train",
+      "objective": 0.6390766135471447,
+      "cumulative_return": 0.775784251916317,
+      "cagr": 0.12172104761885127,
+      "volatility": 0.23374936115705516,
+      "sharpe": 0.6144627915596979,
+      "max_drawdown": 0.3632783039707116,
+      "win_rate": 0.34347826086956523,
+      "number_of_trades": 690
+    },
+    {
+      "strategy": "momentum",
+      "candidate_id": "b087b29824c1beb7dd6069d20924a8c34292951ffbfda214a452812fb4ee0d90",
+      "params": {
+        "lookback_days": 20,
+        "threshold": 0.08
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": 0.44141970232242345,
+      "cumulative_return": 0.6317263440971164,
+      "cagr": 0.10289784417711889,
+      "volatility": 0.2455133785882987,
+      "sharpe": 0.5269471999510839,
+      "max_drawdown": 0.4013906696772186,
+      "win_rate": 0.34494773519163763,
+      "number_of_trades": 861
+    },
+    {
+      "strategy": "momentum",
+      "candidate_id": "f1eed845057be677dd30a752b7219d6ac004b43929bbc9dd0daed3e67f598460",
+      "params": {
+        "lookback_days": 20,
+        "threshold": 0.03
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": 0.9205517231740445,
+      "cumulative_return": 1.005520106534739,
+      "cagr": 0.14935365102264697,
+      "volatility": 0.21664716452303318,
+      "sharpe": 0.7591278954677682,
+      "max_drawdown": 0.3413362255610932,
+      "win_rate": 0.3710801393728223,
+      "number_of_trades": 574
+    },
+    {
+      "strategy": "momentum",
+      "candidate_id": "51d31d66f074f1bbf9760622ffe09914cdea9f9a7f96276119c225c2a8f1fedd",
+      "params": {
+        "lookback_days": 20,
+        "threshold": 0.05
+      },
+      "is_baseline": true,
+      "split": "validation",
+      "objective": -1.7018506894853977,
+      "cumulative_return": -0.22917050622412838,
+      "cagr": -0.22985920157259554,
+      "volatility": 0.19598053568578397,
+      "sharpe": -1.2453644900709842,
+      "max_drawdown": 0.34190094630234946,
+      "win_rate": 0.30113636363636365,
+      "number_of_trades": 176
+    },
+    {
+      "strategy": "momentum",
+      "candidate_id": "b087b29824c1beb7dd6069d20924a8c34292951ffbfda214a452812fb4ee0d90",
+      "params": {
+        "lookback_days": 20,
+        "threshold": 0.08
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -0.9372860412014526,
+      "cumulative_return": -0.13955695417385983,
+      "cagr": -0.14000097194221728,
+      "volatility": 0.20778883717591393,
+      "sharpe": -0.6275352409792683,
+      "max_drawdown": 0.23997232313525452,
+      "win_rate": 0.36312849162011174,
+      "number_of_trades": 179
+    },
+    {
+      "strategy": "momentum",
+      "candidate_id": "f1eed845057be677dd30a752b7219d6ac004b43929bbc9dd0daed3e67f598460",
+      "params": {
+        "lookback_days": 20,
+        "threshold": 0.03
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -0.7968632328655151,
+      "cumulative_return": -0.10314375193185443,
+      "cagr": -0.10347896225142628,
+      "volatility": 0.18274129659087004,
+      "sharpe": -0.5116474240913623,
+      "max_drawdown": 0.23364393280822549,
+      "win_rate": 0.3923076923076923,
+      "number_of_trades": 130
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "0f7a00f9e0ba5260e449bf0a57b240b7f25336e17db670f0e5ec9421ccdfd1cc",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.02,
+        "require_regime_confirmation": true
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -1.3401993743029714,
+      "cumulative_return": -0.4836289882076743,
+      "cagr": -0.12383780327069138,
+      "volatility": 0.23990857680566527,
+      "sharpe": -0.43840257121197646,
+      "max_drawdown": 0.6599823089871579,
+      "win_rate": 0.310580204778157,
+      "number_of_trades": 879
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "1f41bd451bfb2d3281165a27b46350cabc0248f3d381051341704c5b9c014e66",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.02,
+        "require_regime_confirmation": false
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -0.8303696420270088,
+      "cumulative_return": -0.2502870544657737,
+      "cagr": -0.05599221388463138,
+      "volatility": 0.23471704612198718,
+      "sharpe": -0.13165361076909202,
+      "max_drawdown": 0.5735725040250299,
+      "win_rate": 0.2957920792079208,
+      "number_of_trades": 808
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "3fa3e09693f8d917cab7d9f683de7cea185496e13b5cd53c1050d32a7ccc8257",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": true
+      },
+      "is_baseline": true,
+      "split": "train",
+      "objective": -0.6635509950344749,
+      "cumulative_return": -0.16883974704337523,
+      "cagr": -0.036315765608254,
+      "volatility": 0.23477243537004258,
+      "sharpe": -0.042629512712947445,
+      "max_drawdown": 0.5365016087998399,
+      "win_rate": 0.34103260869565216,
+      "number_of_trades": 736
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "6d1b35fe4de93461b225d8751ac8e93f6646cb8cd4c69856c58f19eaca950194",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": false
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -0.029944450152573465,
+      "cumulative_return": 0.25937874343561296,
+      "cagr": 0.047210563121024895,
+      "volatility": 0.2234296272331333,
+      "sharpe": 0.32042848368075855,
+      "max_drawdown": 0.4800623055511385,
+      "win_rate": 0.32037037037037036,
+      "number_of_trades": 540
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "971e533f93acf324685fd47e7bb76c532ad9ed43c0f93db9792d6d7a1edf8500",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.01,
+        "require_regime_confirmation": false
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -0.7481299447718508,
+      "cumulative_return": -0.1910428690237257,
+      "cagr": -0.041521047941659894,
+      "volatility": 0.23146715196145895,
+      "sharpe": -0.07002274038779624,
+      "max_drawdown": 0.5825857698721917,
+      "win_rate": 0.3328402366863905,
+      "number_of_trades": 676
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "df1f93a4c901f6b83954a04bbfb31385edcb4b6cdd985eda21f19ba4d4f2d0d0",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.01,
+        "require_regime_confirmation": true
+      },
+      "is_baseline": false,
+      "split": "train",
+      "objective": -0.7760319740362499,
+      "cumulative_return": -0.227074575753353,
+      "cagr": -0.050216860903449456,
+      "volatility": 0.24280487130507422,
+      "sharpe": -0.09346855783827171,
+      "max_drawdown": 0.5690261283213017,
+      "win_rate": 0.343520782396088,
+      "number_of_trades": 818
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "3fa3e09693f8d917cab7d9f683de7cea185496e13b5cd53c1050d32a7ccc8257",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": true
+      },
+      "is_baseline": true,
+      "split": "validation",
+      "objective": -1.7244061972743738,
+      "cumulative_return": -0.23643030096538764,
+      "cagr": -0.23713730034305613,
+      "volatility": 0.19627955198601255,
+      "sharpe": -1.2911437926548452,
+      "max_drawdown": 0.31504725413683476,
+      "win_rate": 0.3125,
+      "number_of_trades": 176
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "6d1b35fe4de93461b225d8751ac8e93f6646cb8cd4c69856c58f19eaca950194",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": false
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -0.4160529865900249,
+      "cumulative_return": -0.04249189716154178,
+      "cagr": -0.04263466141696126,
+      "volatility": 0.1537121912485121,
+      "sharpe": -0.20942511002509337,
+      "max_drawdown": 0.18538192798416064,
+      "win_rate": 0.38461538461538464,
+      "number_of_trades": 117
+    },
+    {
+      "strategy": "trend_following",
+      "candidate_id": "971e533f93acf324685fd47e7bb76c532ad9ed43c0f93db9792d6d7a1edf8500",
+      "params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.01,
+        "require_regime_confirmation": false
+      },
+      "is_baseline": false,
+      "split": "validation",
+      "objective": -1.631446600805445,
+      "cumulative_return": -0.20578147205283526,
+      "cagr": -0.2064096070249204,
+      "volatility": 0.17515348714472664,
+      "sharpe": -1.2433180950580742,
+      "max_drawdown": 0.28523776972095327,
+      "win_rate": 0.2987012987012987,
+      "number_of_trades": 154
+    }
+  ],
+  "selections": {
+    "momentum": {
+      "candidate_count": 3,
+      "baseline_params": {
+        "lookback_days": 20,
+        "threshold": 0.05
+      },
+      "baseline_train": {
+        "strategy": "momentum",
+        "candidate_id": "51d31d66f074f1bbf9760622ffe09914cdea9f9a7f96276119c225c2a8f1fedd",
+        "params": {
+          "lookback_days": 20,
+          "threshold": 0.05
+        },
+        "is_baseline": true,
+        "split": "train",
+        "objective": 0.6390766135471447,
+        "cumulative_return": 0.775784251916317,
+        "cagr": 0.12172104761885127,
+        "volatility": 0.23374936115705516,
+        "sharpe": 0.6144627915596979,
+        "max_drawdown": 0.3632783039707116,
+        "win_rate": 0.34347826086956523,
+        "number_of_trades": 690
+      },
+      "baseline_validation": {
+        "strategy": "momentum",
+        "candidate_id": "51d31d66f074f1bbf9760622ffe09914cdea9f9a7f96276119c225c2a8f1fedd",
+        "params": {
+          "lookback_days": 20,
+          "threshold": 0.05
+        },
+        "is_baseline": true,
+        "split": "validation",
+        "objective": -1.7018506894853977,
+        "cumulative_return": -0.22917050622412838,
+        "cagr": -0.22985920157259554,
+        "volatility": 0.19598053568578397,
+        "sharpe": -1.2453644900709842,
+        "max_drawdown": 0.34190094630234946,
+        "win_rate": 0.30113636363636365,
+        "number_of_trades": 176
+      },
+      "best_train": {
+        "strategy": "momentum",
+        "candidate_id": "f1eed845057be677dd30a752b7219d6ac004b43929bbc9dd0daed3e67f598460",
+        "params": {
+          "lookback_days": 20,
+          "threshold": 0.03
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": 0.9205517231740445,
+        "cumulative_return": 1.005520106534739,
+        "cagr": 0.14935365102264697,
+        "volatility": 0.21664716452303318,
+        "sharpe": 0.7591278954677682,
+        "max_drawdown": 0.3413362255610932,
+        "win_rate": 0.3710801393728223,
+        "number_of_trades": 574
+      },
+      "selected_params": {
+        "lookback_days": 20,
+        "threshold": 0.03
+      },
+      "selected_train": {
+        "strategy": "momentum",
+        "candidate_id": "f1eed845057be677dd30a752b7219d6ac004b43929bbc9dd0daed3e67f598460",
+        "params": {
+          "lookback_days": 20,
+          "threshold": 0.03
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": 0.9205517231740445,
+        "cumulative_return": 1.005520106534739,
+        "cagr": 0.14935365102264697,
+        "volatility": 0.21664716452303318,
+        "sharpe": 0.7591278954677682,
+        "max_drawdown": 0.3413362255610932,
+        "win_rate": 0.3710801393728223,
+        "number_of_trades": 574
+      },
+      "selected_validation": {
+        "strategy": "momentum",
+        "candidate_id": "f1eed845057be677dd30a752b7219d6ac004b43929bbc9dd0daed3e67f598460",
+        "params": {
+          "lookback_days": 20,
+          "threshold": 0.03
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": -0.7968632328655151,
+        "cumulative_return": -0.10314375193185443,
+        "cagr": -0.10347896225142628,
+        "volatility": 0.18274129659087004,
+        "sharpe": -0.5116474240913623,
+        "max_drawdown": 0.23364393280822549,
+        "win_rate": 0.3923076923076923,
+        "number_of_trades": 130
+      },
+      "combined_objective": 0.06184424515426473,
+      "overfitting_flags": [
+        "positive_train_but_negative_validation_objective",
+        "large_train_to_validation_objective_drop",
+        "selected_threshold_at_grid_boundary"
+      ]
+    },
+    "trend_following": {
+      "candidate_count": 6,
+      "baseline_params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": true
+      },
+      "baseline_train": {
+        "strategy": "trend_following",
+        "candidate_id": "3fa3e09693f8d917cab7d9f683de7cea185496e13b5cd53c1050d32a7ccc8257",
+        "params": {
+          "fast_window": 20,
+          "slow_window": 50,
+          "crossover_threshold": 0.0,
+          "require_regime_confirmation": true
+        },
+        "is_baseline": true,
+        "split": "train",
+        "objective": -0.6635509950344749,
+        "cumulative_return": -0.16883974704337523,
+        "cagr": -0.036315765608254,
+        "volatility": 0.23477243537004258,
+        "sharpe": -0.042629512712947445,
+        "max_drawdown": 0.5365016087998399,
+        "win_rate": 0.34103260869565216,
+        "number_of_trades": 736
+      },
+      "baseline_validation": {
+        "strategy": "trend_following",
+        "candidate_id": "3fa3e09693f8d917cab7d9f683de7cea185496e13b5cd53c1050d32a7ccc8257",
+        "params": {
+          "fast_window": 20,
+          "slow_window": 50,
+          "crossover_threshold": 0.0,
+          "require_regime_confirmation": true
+        },
+        "is_baseline": true,
+        "split": "validation",
+        "objective": -1.7244061972743738,
+        "cumulative_return": -0.23643030096538764,
+        "cagr": -0.23713730034305613,
+        "volatility": 0.19627955198601255,
+        "sharpe": -1.2911437926548452,
+        "max_drawdown": 0.31504725413683476,
+        "win_rate": 0.3125,
+        "number_of_trades": 176
+      },
+      "best_train": {
+        "strategy": "trend_following",
+        "candidate_id": "6d1b35fe4de93461b225d8751ac8e93f6646cb8cd4c69856c58f19eaca950194",
+        "params": {
+          "fast_window": 20,
+          "slow_window": 50,
+          "crossover_threshold": 0.0,
+          "require_regime_confirmation": false
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": -0.029944450152573465,
+        "cumulative_return": 0.25937874343561296,
+        "cagr": 0.047210563121024895,
+        "volatility": 0.2234296272331333,
+        "sharpe": 0.32042848368075855,
+        "max_drawdown": 0.4800623055511385,
+        "win_rate": 0.32037037037037036,
+        "number_of_trades": 540
+      },
+      "selected_params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": false
+      },
+      "selected_train": {
+        "strategy": "trend_following",
+        "candidate_id": "6d1b35fe4de93461b225d8751ac8e93f6646cb8cd4c69856c58f19eaca950194",
+        "params": {
+          "fast_window": 20,
+          "slow_window": 50,
+          "crossover_threshold": 0.0,
+          "require_regime_confirmation": false
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": -0.029944450152573465,
+        "cumulative_return": 0.25937874343561296,
+        "cagr": 0.047210563121024895,
+        "volatility": 0.2234296272331333,
+        "sharpe": 0.32042848368075855,
+        "max_drawdown": 0.4800623055511385,
+        "win_rate": 0.32037037037037036,
+        "number_of_trades": 540
+      },
+      "selected_validation": {
+        "strategy": "trend_following",
+        "candidate_id": "6d1b35fe4de93461b225d8751ac8e93f6646cb8cd4c69856c58f19eaca950194",
+        "params": {
+          "fast_window": 20,
+          "slow_window": 50,
+          "crossover_threshold": 0.0,
+          "require_regime_confirmation": false
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": -0.4160529865900249,
+        "cumulative_return": -0.04249189716154178,
+        "cagr": -0.04263466141696126,
+        "volatility": 0.1537121912485121,
+        "sharpe": -0.20942511002509337,
+        "max_drawdown": 0.18538192798416064,
+        "win_rate": 0.38461538461538464,
+        "number_of_trades": 117
+      },
+      "combined_objective": -0.22299871837129917,
+      "overfitting_flags": [
+        "selected_crossover_threshold_at_grid_boundary"
+      ]
+    },
+    "mean_reversion": {
+      "candidate_count": 16,
+      "baseline_params": {
+        "rsi_window": 14,
+        "oversold_rsi": 30,
+        "overbought_rsi": 70,
+        "lower_percent_b": 0.0,
+        "upper_percent_b": 1.0
+      },
+      "baseline_train": {
+        "strategy": "mean_reversion",
+        "candidate_id": "fe66c597052228518a4b2ab68b8597711abc4a2d8691053c3b7a995db1b09615",
+        "params": {
+          "rsi_window": 14,
+          "oversold_rsi": 30,
+          "overbought_rsi": 70,
+          "lower_percent_b": 0.0,
+          "upper_percent_b": 1.0
+        },
+        "is_baseline": true,
+        "split": "train",
+        "objective": -3.021548685581258,
+        "cumulative_return": -0.8150065095656431,
+        "cagr": -0.2864716677619641,
+        "volatility": 0.18124834519848243,
+        "sharpe": -1.7934072614473586,
+        "max_drawdown": 0.8206381693510779,
+        "win_rate": 0.4838709677419355,
+        "number_of_trades": 1147
+      },
+      "baseline_validation": {
+        "strategy": "mean_reversion",
+        "candidate_id": "fe66c597052228518a4b2ab68b8597711abc4a2d8691053c3b7a995db1b09615",
+        "params": {
+          "rsi_window": 14,
+          "oversold_rsi": 30,
+          "overbought_rsi": 70,
+          "lower_percent_b": 0.0,
+          "upper_percent_b": 1.0
+        },
+        "is_baseline": true,
+        "split": "validation",
+        "objective": -1.0290685634068066,
+        "cumulative_return": -0.09267687539407021,
+        "cagr": -0.09297985774431172,
+        "volatility": 0.10942285754875374,
+        "sharpe": -0.8446317623987598,
+        "max_drawdown": 0.13809836331101177,
+        "win_rate": 0.49074074074074076,
+        "number_of_trades": 216
+      },
+      "best_train": {
+        "strategy": "mean_reversion",
+        "candidate_id": "74dbd8aa4ae3bcc702f873f7d95d642b80fb3d063c6e4ddbe4603df0d5544900",
+        "params": {
+          "rsi_window": 14,
+          "oversold_rsi": 25,
+          "overbought_rsi": 75,
+          "lower_percent_b": -0.1,
+          "upper_percent_b": 1.1
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": -1.1973815531782064,
+        "cumulative_return": -0.3279094867879999,
+        "cagr": -0.07640658545067225,
+        "volatility": 0.11911069323287389,
+        "sharpe": -0.6170370418246053,
+        "max_drawdown": 0.41638976795960114,
+        "win_rate": 0.5201698513800425,
+        "number_of_trades": 471
+      },
+      "selected_params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "selected_train": {
+        "strategy": "mean_reversion",
+        "candidate_id": "74dbd8aa4ae3bcc702f873f7d95d642b80fb3d063c6e4ddbe4603df0d5544900",
+        "params": {
+          "rsi_window": 14,
+          "oversold_rsi": 25,
+          "overbought_rsi": 75,
+          "lower_percent_b": -0.1,
+          "upper_percent_b": 1.1
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": -1.1973815531782064,
+        "cumulative_return": -0.3279094867879999,
+        "cagr": -0.07640658545067225,
+        "volatility": 0.11911069323287389,
+        "sharpe": -0.6170370418246053,
+        "max_drawdown": 0.41638976795960114,
+        "win_rate": 0.5201698513800425,
+        "number_of_trades": 471
+      },
+      "selected_validation": {
+        "strategy": "mean_reversion",
+        "candidate_id": "74dbd8aa4ae3bcc702f873f7d95d642b80fb3d063c6e4ddbe4603df0d5544900",
+        "params": {
+          "rsi_window": 14,
+          "oversold_rsi": 25,
+          "overbought_rsi": 75,
+          "lower_percent_b": -0.1,
+          "upper_percent_b": 1.1
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": 0.10941787282642423,
+        "cumulative_return": 0.0043129816229035,
+        "cagr": 0.004327824689954962,
+        "volatility": 0.037560391617792864,
+        "sharpe": 0.13463879137306045,
+        "max_drawdown": 0.027377409358087967,
+        "win_rate": 0.4507042253521127,
+        "number_of_trades": 71
+      },
+      "combined_objective": -0.5439818401758911,
+      "overfitting_flags": []
+    },
+    "breakout": {
+      "candidate_count": 3,
+      "baseline_params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 1.5
+      },
+      "baseline_train": {
+        "strategy": "breakout",
+        "candidate_id": "95d14fa89e5b6b573171fa3a3e26fc9e28dbf13c3b2568142d4f2d1e686b01e4",
+        "params": {
+          "lookback_days": 20,
+          "breakout_multiplier": 1.5
+        },
+        "is_baseline": true,
+        "split": "train",
+        "objective": -2.2489313631127277,
+        "cumulative_return": -0.6168337446869647,
+        "cagr": -0.17459699979905485,
+        "volatility": 0.1518391854215849,
+        "sharpe": -1.2059510548974623,
+        "max_drawdown": 0.734563435871783,
+        "win_rate": 0.36722306525037934,
+        "number_of_trades": 1318
+      },
+      "baseline_validation": {
+        "strategy": "breakout",
+        "candidate_id": "95d14fa89e5b6b573171fa3a3e26fc9e28dbf13c3b2568142d4f2d1e686b01e4",
+        "params": {
+          "lookback_days": 20,
+          "breakout_multiplier": 1.5
+        },
+        "is_baseline": true,
+        "split": "validation",
+        "objective": -4.139184510843555,
+        "cumulative_return": -0.3051433522011031,
+        "cagr": -0.30601149886554035,
+        "volatility": 0.09900918100477986,
+        "sharpe": -3.669076961273988,
+        "max_drawdown": 0.317535873469016,
+        "win_rate": 0.3481781376518219,
+        "number_of_trades": 247
+      },
+      "best_train": {
+        "strategy": "breakout",
+        "candidate_id": "e621fade67b1d170a610cf45f74dd2930dc81e60e42a027387228c6312f63624",
+        "params": {
+          "lookback_days": 20,
+          "breakout_multiplier": 2.0
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": -1.9615542014486433,
+        "cumulative_return": -0.5214443606335362,
+        "cagr": -0.1370657163107365,
+        "volatility": 0.12543055606505707,
+        "sharpe": -1.128358886348368,
+        "max_drawdown": 0.5724731347835073,
+        "win_rate": 0.38452520515826494,
+        "number_of_trades": 853
+      },
+      "selected_params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 2.0
+      },
+      "selected_train": {
+        "strategy": "breakout",
+        "candidate_id": "e621fade67b1d170a610cf45f74dd2930dc81e60e42a027387228c6312f63624",
+        "params": {
+          "lookback_days": 20,
+          "breakout_multiplier": 2.0
+        },
+        "is_baseline": false,
+        "split": "train",
+        "objective": -1.9615542014486433,
+        "cumulative_return": -0.5214443606335362,
+        "cagr": -0.1370657163107365,
+        "volatility": 0.12543055606505707,
+        "sharpe": -1.128358886348368,
+        "max_drawdown": 0.5724731347835073,
+        "win_rate": 0.38452520515826494,
+        "number_of_trades": 853
+      },
+      "selected_validation": {
+        "strategy": "breakout",
+        "candidate_id": "e621fade67b1d170a610cf45f74dd2930dc81e60e42a027387228c6312f63624",
+        "params": {
+          "lookback_days": 20,
+          "breakout_multiplier": 2.0
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": -2.7705706150946234,
+        "cumulative_return": -0.17053868182993592,
+        "cagr": -0.17107110594802577,
+        "volatility": 0.07443904478773038,
+        "sharpe": -2.5038800557099603,
+        "max_drawdown": 0.18142121846969528,
+        "win_rate": 0.38311688311688313,
+        "number_of_trades": 154
+      },
+      "combined_objective": -2.3660624082716333,
+      "overfitting_flags": [
+        "selected_breakout_multiplier_at_grid_boundary"
+      ]
+    }
+  }
+}

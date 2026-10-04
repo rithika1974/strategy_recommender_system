@@ -1,0 +1,5 @@
+models:
+  default_chat_model: "gpt-4o-mini"
+  temperature: 0.2
+  max_tokens: 800
+  provider: "openai"

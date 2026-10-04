@@ -1,0 +1,15 @@
+agents:
+  technical:
+    enabled: true
+  fundamental:
+    enabled: false
+  macro:
+    enabled: true
+  sentiment:
+    enabled: false
+  strategy:
+    enabled: true
+  risk:
+    enabled: true
+  judge:
+    enabled: true

@@ -1,0 +1,7 @@
+risk:
+  max_drawdown: 0.25
+  max_position_weight: 0.2
+  max_concentration: 0.4
+  sharpe_floor: 0.5
+  sortino_floor: 0.4
+  required_trade_count: 20

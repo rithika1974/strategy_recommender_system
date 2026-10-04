@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.test-tmp*/
+.git-tools/
+data/raw/
+data/processed/
+data/market_data.db
+data/metadata/instruments/*.json

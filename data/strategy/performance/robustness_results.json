@@ -1,0 +1,2356 @@
+{
+  "methodology": {
+    "analysis_type": "robustness_and_diagnostic_analysis",
+    "temporal_interpretation": "Fixed-parameter temporal stability; not new unseen out-of-sample validation.",
+    "parameters": "already selected TRAIN 2020-2024 / VALIDATION 2025 configurations",
+    "optimization_performed": false,
+    "test_period_accessed": false,
+    "test_cutoff": "2026-01-01",
+    "execution": "existing next-open engine with existing costs and slippage",
+    "cross_stock_interpretation": "cross-sectional breadth analysis; not out-of-sample generalization",
+    "regime_attribution": "strictly previous available trading-day regime for returns and entry trades"
+  },
+  "date_boundaries": {
+    "analysis_start_date": "2020-01-01",
+    "analysis_end_date": "2025-12-31",
+    "temporal_folds": [
+      {
+        "name": "fold_1",
+        "context_start_date": "2020-01-01",
+        "context_end_date": "2022-12-31",
+        "evaluation_start_date": "2023-01-01",
+        "evaluation_end_date": "2023-12-31"
+      },
+      {
+        "name": "fold_2",
+        "context_start_date": "2020-01-01",
+        "context_end_date": "2023-12-31",
+        "evaluation_start_date": "2024-01-01",
+        "evaluation_end_date": "2024-12-31"
+      },
+      {
+        "name": "fold_3",
+        "context_start_date": "2020-01-01",
+        "context_end_date": "2024-12-31",
+        "evaluation_start_date": "2025-01-01",
+        "evaluation_end_date": "2025-12-31"
+      }
+    ]
+  },
+  "temporal_results": [
+    {
+      "fold": "fold_1",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2022-12-31",
+      "evaluation_start_date": "2023-01-01",
+      "evaluation_end_date": "2023-12-31",
+      "strategy": "breakout",
+      "metrics": {
+        "cumulative_return": -0.14940588327697713,
+        "cagr": -0.1510247953142091,
+        "volatility": 0.07094622670781181,
+        "sharpe": -2.300408418695368,
+        "max_drawdown": 0.18680887236730104,
+        "win_rate": 0.3783783783783784,
+        "number_of_trades": 185
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_1",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2022-12-31",
+      "evaluation_start_date": "2023-01-01",
+      "evaluation_end_date": "2023-12-31",
+      "strategy": "mean_reversion",
+      "metrics": {
+        "cumulative_return": -0.13238717916466036,
+        "cagr": -0.13383649414003207,
+        "volatility": 0.060569937595832034,
+        "sharpe": -2.3708068511307476,
+        "max_drawdown": 0.15456258858142402,
+        "win_rate": 0.47959183673469385,
+        "number_of_trades": 98
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_1",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2022-12-31",
+      "evaluation_start_date": "2023-01-01",
+      "evaluation_end_date": "2023-12-31",
+      "strategy": "momentum",
+      "metrics": {
+        "cumulative_return": 0.17396616938667098,
+        "cagr": 0.17618497374438746,
+        "volatility": 0.1551188810002902,
+        "sharpe": 1.13714190250217,
+        "max_drawdown": 0.12966396766524735,
+        "win_rate": 0.36923076923076925,
+        "number_of_trades": 130
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_1",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2022-12-31",
+      "evaluation_start_date": "2023-01-01",
+      "evaluation_end_date": "2023-12-31",
+      "strategy": "trend_following",
+      "metrics": {
+        "cumulative_return": 0.3169318543959754,
+        "cagr": 0.3212071151993372,
+        "volatility": 0.16574748556159813,
+        "sharpe": 1.7852326636384321,
+        "max_drawdown": 0.10950486867316556,
+        "win_rate": 0.3333333333333333,
+        "number_of_trades": 99
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_2",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2023-12-31",
+      "evaluation_start_date": "2024-01-01",
+      "evaluation_end_date": "2024-12-31",
+      "strategy": "breakout",
+      "metrics": {
+        "cumulative_return": -0.28023180314540186,
+        "cagr": -0.2803938934844472,
+        "volatility": 0.09868235906445028,
+        "sharpe": -3.320406506041451,
+        "max_drawdown": 0.2890020359962653,
+        "win_rate": 0.35714285714285715,
+        "number_of_trades": 168
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_2",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2023-12-31",
+      "evaluation_start_date": "2024-01-01",
+      "evaluation_end_date": "2024-12-31",
+      "strategy": "mean_reversion",
+      "metrics": {
+        "cumulative_return": 0.08112065286887749,
+        "cagr": 0.08117841153849326,
+        "volatility": 0.08533136618222419,
+        "sharpe": 0.9671207838863407,
+        "max_drawdown": 0.03562727080568573,
+        "win_rate": 0.5684210526315789,
+        "number_of_trades": 95
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_2",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2023-12-31",
+      "evaluation_start_date": "2024-01-01",
+      "evaluation_end_date": "2024-12-31",
+      "strategy": "momentum",
+      "metrics": {
+        "cumulative_return": -0.08019693753452084,
+        "cagr": -0.0802496014896229,
+        "volatility": 0.18547702047245845,
+        "sharpe": -0.36356596602634283,
+        "max_drawdown": 0.16186933763499645,
+        "win_rate": 0.3333333333333333,
+        "number_of_trades": 120
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_2",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2023-12-31",
+      "evaluation_start_date": "2024-01-01",
+      "evaluation_end_date": "2024-12-31",
+      "strategy": "trend_following",
+      "metrics": {
+        "cumulative_return": -0.1927662010056086,
+        "cagr": -0.19288459137163605,
+        "volatility": 0.184084387428542,
+        "sharpe": -1.0843988276009913,
+        "max_drawdown": 0.20687036445622098,
+        "win_rate": 0.33613445378151263,
+        "number_of_trades": 119
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_3",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2024-12-31",
+      "evaluation_start_date": "2025-01-01",
+      "evaluation_end_date": "2025-12-31",
+      "strategy": "breakout",
+      "metrics": {
+        "cumulative_return": -0.17053868182993592,
+        "cagr": -0.17107110594802577,
+        "volatility": 0.07443904478773038,
+        "sharpe": -2.5038800557099603,
+        "max_drawdown": 0.18142121846969528,
+        "win_rate": 0.38311688311688313,
+        "number_of_trades": 154
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_3",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2024-12-31",
+      "evaluation_start_date": "2025-01-01",
+      "evaluation_end_date": "2025-12-31",
+      "strategy": "mean_reversion",
+      "metrics": {
+        "cumulative_return": 0.0043129816229035,
+        "cagr": 0.004327824689954962,
+        "volatility": 0.037560391617792864,
+        "sharpe": 0.13463879137306045,
+        "max_drawdown": 0.027377409358087967,
+        "win_rate": 0.4507042253521127,
+        "number_of_trades": 71
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_3",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2024-12-31",
+      "evaluation_start_date": "2025-01-01",
+      "evaluation_end_date": "2025-12-31",
+      "strategy": "momentum",
+      "metrics": {
+        "cumulative_return": -0.10314375193185443,
+        "cagr": -0.10347896225142628,
+        "volatility": 0.18274129659087004,
+        "sharpe": -0.5116474240913623,
+        "max_drawdown": 0.23364393280822549,
+        "win_rate": 0.3923076923076923,
+        "number_of_trades": 130
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    },
+    {
+      "fold": "fold_3",
+      "context_start_date": "2020-01-01",
+      "context_end_date": "2024-12-31",
+      "evaluation_start_date": "2025-01-01",
+      "evaluation_end_date": "2025-12-31",
+      "strategy": "trend_following",
+      "metrics": {
+        "cumulative_return": -0.04249189716154178,
+        "cagr": -0.04263466141696126,
+        "volatility": 0.1537121912485121,
+        "sharpe": -0.20942511002509337,
+        "max_drawdown": 0.18538192798416064,
+        "win_rate": 0.38461538461538464,
+        "number_of_trades": 117
+      },
+      "fresh_initial_cash": 1000000.0,
+      "ending_position": "flat"
+    }
+  ],
+  "parameter_sensitivity": {
+    "breakout": {
+      "selected_params": {
+        "lookback_days": 20,
+        "breakout_multiplier": 2.0
+      },
+      "selected_validation": {
+        "strategy": "breakout",
+        "candidate_id": "e621fade67b1d170a610cf45f74dd2930dc81e60e42a027387228c6312f63624",
+        "params": {
+          "lookback_days": 20,
+          "breakout_multiplier": 2.0
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": -2.7705706150946234,
+        "cumulative_return": -0.17053868182993592,
+        "cagr": -0.17107110594802577,
+        "volatility": 0.07443904478773038,
+        "sharpe": -2.5038800557099603,
+        "max_drawdown": 0.18142121846969528,
+        "win_rate": 0.38311688311688313,
+        "number_of_trades": 154
+      },
+      "neighbors": [
+        {
+          "strategy": "breakout",
+          "candidate_id": "95d14fa89e5b6b573171fa3a3e26fc9e28dbf13c3b2568142d4f2d1e686b01e4",
+          "params": {
+            "lookback_days": 20,
+            "breakout_multiplier": 1.5
+          },
+          "is_baseline": true,
+          "split": "validation",
+          "objective": -4.139184510843555,
+          "cumulative_return": -0.3051433522011031,
+          "cagr": -0.30601149886554035,
+          "volatility": 0.09900918100477986,
+          "sharpe": -3.669076961273988,
+          "max_drawdown": 0.317535873469016,
+          "win_rate": 0.3481781376518219,
+          "number_of_trades": 247,
+          "source": "stored_validation_result"
+        }
+      ],
+      "classification": "BOUNDARY",
+      "reasons": [
+        "selected_breakout_multiplier_at_grid_boundary"
+      ]
+    },
+    "mean_reversion": {
+      "selected_params": {
+        "rsi_window": 14,
+        "oversold_rsi": 25,
+        "overbought_rsi": 75,
+        "lower_percent_b": -0.1,
+        "upper_percent_b": 1.1
+      },
+      "selected_validation": {
+        "strategy": "mean_reversion",
+        "candidate_id": "74dbd8aa4ae3bcc702f873f7d95d642b80fb3d063c6e4ddbe4603df0d5544900",
+        "params": {
+          "rsi_window": 14,
+          "oversold_rsi": 25,
+          "overbought_rsi": 75,
+          "lower_percent_b": -0.1,
+          "upper_percent_b": 1.1
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": 0.10941787282642423,
+        "cumulative_return": 0.0043129816229035,
+        "cagr": 0.004327824689954962,
+        "volatility": 0.037560391617792864,
+        "sharpe": 0.13463879137306045,
+        "max_drawdown": 0.027377409358087967,
+        "win_rate": 0.4507042253521127,
+        "number_of_trades": 71
+      },
+      "neighbors": [
+        {
+          "strategy": "mean_reversion",
+          "candidate_id": "2f5699d4a541f1a782f6888d44fbf0c80ef31598b77f50ab48450875a5df365b",
+          "params": {
+            "rsi_window": 14,
+            "oversold_rsi": 25,
+            "overbought_rsi": 70,
+            "lower_percent_b": -0.1,
+            "upper_percent_b": 1.1
+          },
+          "is_baseline": false,
+          "split": "validation",
+          "objective": -0.6722058611643519,
+          "cumulative_return": -0.025771751987035407,
+          "cagr": -0.025859099617050574,
+          "volatility": 0.04254826865499026,
+          "sharpe": -0.5998198094837135,
+          "max_drawdown": 0.05950017568712063,
+          "win_rate": 0.43820224719101125,
+          "number_of_trades": 89,
+          "source": "stored_validation_result"
+        },
+        {
+          "strategy": "mean_reversion",
+          "params": {
+            "rsi_window": 14,
+            "oversold_rsi": 25,
+            "overbought_rsi": 75,
+            "lower_percent_b": -0.1,
+            "upper_percent_b": 1.0
+          },
+          "split": "validation",
+          "objective": 0.45823991847880485,
+          "cumulative_return": 0.02427501066867377,
+          "cagr": 0.02435937984770642,
+          "volatility": 0.05203845783465854,
+          "sharpe": 0.4923504274027199,
+          "max_drawdown": 0.04624801425825198,
+          "win_rate": 0.5,
+          "number_of_trades": 108,
+          "source": "diagnostic_validation_run"
+        },
+        {
+          "strategy": "mean_reversion",
+          "candidate_id": "6a370e9a94c5bf0375dee8f97909fe2ad7bc70f3d4855fe718e5a3c63f0b2434",
+          "params": {
+            "rsi_window": 14,
+            "oversold_rsi": 30,
+            "overbought_rsi": 75,
+            "lower_percent_b": -0.1,
+            "upper_percent_b": 1.1
+          },
+          "is_baseline": false,
+          "split": "validation",
+          "objective": -0.5142674182784568,
+          "cumulative_return": -0.025390851961501038,
+          "cagr": -0.025476925567304742,
+          "volatility": 0.05326532057951332,
+          "sharpe": -0.4620268326667999,
+          "max_drawdown": 0.039545159630906435,
+          "win_rate": 0.43373493975903615,
+          "number_of_trades": 83,
+          "source": "stored_validation_result"
+        },
+        {
+          "strategy": "mean_reversion",
+          "params": {
+            "rsi_window": 14,
+            "oversold_rsi": 25,
+            "overbought_rsi": 75,
+            "lower_percent_b": 0.0,
+            "upper_percent_b": 1.1
+          },
+          "split": "validation",
+          "objective": 0.18036061097499542,
+          "cumulative_return": 0.01237717199234667,
+          "cagr": 0.012419938881591985,
+          "volatility": 0.06451843692828169,
+          "sharpe": 0.22490021141183988,
+          "max_drawdown": 0.0507281864330178,
+          "win_rate": 0.46153846153846156,
+          "number_of_trades": 104,
+          "source": "diagnostic_validation_run"
+        }
+      ],
+      "classification": "SENSITIVE",
+      "reasons": [
+        "material_objective_difference"
+      ]
+    },
+    "momentum": {
+      "selected_params": {
+        "lookback_days": 20,
+        "threshold": 0.03
+      },
+      "selected_validation": {
+        "strategy": "momentum",
+        "candidate_id": "f1eed845057be677dd30a752b7219d6ac004b43929bbc9dd0daed3e67f598460",
+        "params": {
+          "lookback_days": 20,
+          "threshold": 0.03
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": -0.7968632328655151,
+        "cumulative_return": -0.10314375193185443,
+        "cagr": -0.10347896225142628,
+        "volatility": 0.18274129659087004,
+        "sharpe": -0.5116474240913623,
+        "max_drawdown": 0.23364393280822549,
+        "win_rate": 0.3923076923076923,
+        "number_of_trades": 130
+      },
+      "neighbors": [
+        {
+          "strategy": "momentum",
+          "candidate_id": "51d31d66f074f1bbf9760622ffe09914cdea9f9a7f96276119c225c2a8f1fedd",
+          "params": {
+            "lookback_days": 20,
+            "threshold": 0.05
+          },
+          "is_baseline": true,
+          "split": "validation",
+          "objective": -1.7018506894853977,
+          "cumulative_return": -0.22917050622412838,
+          "cagr": -0.22985920157259554,
+          "volatility": 0.19598053568578397,
+          "sharpe": -1.2453644900709842,
+          "max_drawdown": 0.34190094630234946,
+          "win_rate": 0.30113636363636365,
+          "number_of_trades": 176,
+          "source": "stored_validation_result"
+        }
+      ],
+      "classification": "BOUNDARY",
+      "reasons": [
+        "selected_threshold_at_grid_boundary"
+      ]
+    },
+    "trend_following": {
+      "selected_params": {
+        "fast_window": 20,
+        "slow_window": 50,
+        "crossover_threshold": 0.0,
+        "require_regime_confirmation": false
+      },
+      "selected_validation": {
+        "strategy": "trend_following",
+        "candidate_id": "6d1b35fe4de93461b225d8751ac8e93f6646cb8cd4c69856c58f19eaca950194",
+        "params": {
+          "fast_window": 20,
+          "slow_window": 50,
+          "crossover_threshold": 0.0,
+          "require_regime_confirmation": false
+        },
+        "is_baseline": false,
+        "split": "validation",
+        "objective": -0.4160529865900249,
+        "cumulative_return": -0.04249189716154178,
+        "cagr": -0.04263466141696126,
+        "volatility": 0.1537121912485121,
+        "sharpe": -0.20942511002509337,
+        "max_drawdown": 0.18538192798416064,
+        "win_rate": 0.38461538461538464,
+        "number_of_trades": 117
+      },
+      "neighbors": [
+        {
+          "strategy": "trend_following",
+          "candidate_id": "3fa3e09693f8d917cab7d9f683de7cea185496e13b5cd53c1050d32a7ccc8257",
+          "params": {
+            "fast_window": 20,
+            "slow_window": 50,
+            "crossover_threshold": 0.0,
+            "require_regime_confirmation": true
+          },
+          "is_baseline": true,
+          "split": "validation",
+          "objective": -1.7244061972743738,
+          "cumulative_return": -0.23643030096538764,
+          "cagr": -0.23713730034305613,
+          "volatility": 0.19627955198601255,
+          "sharpe": -1.2911437926548452,
+          "max_drawdown": 0.31504725413683476,
+          "win_rate": 0.3125,
+          "number_of_trades": 176,
+          "source": "stored_validation_result"
+        },
+        {
+          "strategy": "trend_following",
+          "candidate_id": "971e533f93acf324685fd47e7bb76c532ad9ed43c0f93db9792d6d7a1edf8500",
+          "params": {
+            "fast_window": 20,
+            "slow_window": 50,
+            "crossover_threshold": 0.01,
+            "require_regime_confirmation": false
+          },
+          "is_baseline": false,
+          "split": "validation",
+          "objective": -1.631446600805445,
+          "cumulative_return": -0.20578147205283526,
+          "cagr": -0.2064096070249204,
+          "volatility": 0.17515348714472664,
+          "sharpe": -1.2433180950580742,
+          "max_drawdown": 0.28523776972095327,
+          "win_rate": 0.2987012987012987,
+          "number_of_trades": 154,
+          "source": "stored_validation_result"
+        }
+      ],
+      "classification": "BOUNDARY",
+      "reasons": [
+        "selected_crossover_threshold_at_grid_boundary"
+      ]
+    }
+  },
+  "stock_level_results": {
+    "breakout": [
+      {
+        "symbol": "ALKEM",
+        "metrics": {
+          "cumulative_return": -0.015688610570966932,
+          "cagr": -0.002632626534756599,
+          "volatility": 0.013003827128354763,
+          "sharpe": -0.19886133730710456,
+          "max_drawdown": 0.02930277648267976,
+          "win_rate": 0.4166666666666667,
+          "number_of_trades": 36
+        }
+      },
+      {
+        "symbol": "ASHOKLEY",
+        "metrics": {
+          "cumulative_return": 0.009759008899223431,
+          "cagr": 0.0016202968651781724,
+          "volatility": 0.021795484797610412,
+          "sharpe": 0.08602530034664412,
+          "max_drawdown": 0.05400536552183832,
+          "win_rate": 0.4166666666666667,
+          "number_of_trades": 36
+        }
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "metrics": {
+          "cumulative_return": -0.034098648550278554,
+          "cagr": -0.00576688861161645,
+          "volatility": 0.01462987328628571,
+          "sharpe": -0.3931943642791582,
+          "max_drawdown": 0.045472623061799444,
+          "win_rate": 0.425,
+          "number_of_trades": 40
+        }
+      },
+      {
+        "symbol": "BALAMINES",
+        "metrics": {
+          "cumulative_return": 0.06356678189483489,
+          "cagr": 0.010326657682342644,
+          "volatility": 0.03056121254041636,
+          "sharpe": 0.3557083431375544,
+          "max_drawdown": 0.04175477761598301,
+          "win_rate": 0.45454545454545453,
+          "number_of_trades": 44
+        }
+      },
+      {
+        "symbol": "BHARATFORG",
+        "metrics": {
+          "cumulative_return": -0.12643756614293966,
+          "cagr": -0.022282417141098243,
+          "volatility": 0.022899826900224192,
+          "sharpe": -0.9853942052517741,
+          "max_drawdown": 0.13044566432386784,
+          "win_rate": 0.16666666666666666,
+          "number_of_trades": 36
+        }
+      },
+      {
+        "symbol": "BHARTIARTL",
+        "metrics": {
+          "cumulative_return": -0.018304411417057742,
+          "cagr": -0.003074966880242891,
+          "volatility": 0.00892888564252218,
+          "sharpe": -0.34499992221601006,
+          "max_drawdown": 0.02242734736373264,
+          "win_rate": 0.35714285714285715,
+          "number_of_trades": 28
+        }
+      },
+      {
+        "symbol": "BHEL",
+        "metrics": {
+          "cumulative_return": -0.03125628740090236,
+          "cagr": -0.0052797520698733,
+          "volatility": 0.021841273985624843,
+          "sharpe": -0.23466977160711525,
+          "max_drawdown": 0.06156940813605194,
+          "win_rate": 0.4489795918367347,
+          "number_of_trades": 49
+        }
+      },
+      {
+        "symbol": "CAMPUS",
+        "metrics": {
+          "cumulative_return": -0.018686194684927382,
+          "cagr": -0.005159097987525674,
+          "volatility": 0.018502002363240764,
+          "sharpe": -0.27371829769036105,
+          "max_drawdown": 0.03654250203999554,
+          "win_rate": 0.3333333333333333,
+          "number_of_trades": 27
+        }
+      },
+      {
+        "symbol": "CESC",
+        "metrics": {
+          "cumulative_return": -0.027817970238934064,
+          "cagr": -0.004692067172542336,
+          "volatility": 0.013786995779139633,
+          "sharpe": -0.33873308850765943,
+          "max_drawdown": 0.029093460442191632,
+          "win_rate": 0.36363636363636365,
+          "number_of_trades": 44
+        }
+      },
+      {
+        "symbol": "FEDERALBNK",
+        "metrics": {
+          "cumulative_return": -0.08088187154335436,
+          "cagr": -0.013961598735789615,
+          "volatility": 0.024183362157132952,
+          "sharpe": -0.5767611913563769,
+          "max_drawdown": 0.09220254519007409,
+          "win_rate": 0.3,
+          "number_of_trades": 30
+        }
+      },
+      {
+        "symbol": "HDFCBANK",
+        "metrics": {
+          "cumulative_return": -0.07907207042752995,
+          "cagr": -0.013638194889889932,
+          "volatility": 0.013293315682497702,
+          "sharpe": -1.0398923725771985,
+          "max_drawdown": 0.08406620765684825,
+          "win_rate": 0.25,
+          "number_of_trades": 20
+        }
+      },
+      {
+        "symbol": "HFCL",
+        "metrics": {
+          "cumulative_return": -0.062165691523718425,
+          "cagr": -0.010642403884448481,
+          "volatility": 0.0313178716753963,
+          "sharpe": -0.3305986639524631,
+          "max_drawdown": 0.11246986027750483,
+          "win_rate": 0.3181818181818182,
+          "number_of_trades": 44
+        }
+      },
+      {
+        "symbol": "HINDUNILVR",
+        "metrics": {
+          "cumulative_return": -0.015142265584812797,
+          "cagr": -0.0025403615227452825,
+          "volatility": 0.008154060579527894,
+          "sharpe": -0.3119740994785166,
+          "max_drawdown": 0.025321431526142524,
+          "win_rate": 0.53125,
+          "number_of_trades": 32
+        }
+      },
+      {
+        "symbol": "ICICIBANK",
+        "metrics": {
+          "cumulative_return": -0.05008654456088646,
+          "cagr": -0.008529436898034426,
+          "volatility": 0.01413823181251176,
+          "sharpe": -0.606734378965983,
+          "max_drawdown": 0.052869880144957415,
+          "win_rate": 0.2,
+          "number_of_trades": 20
+        }
+      },
+      {
+        "symbol": "INFY",
+        "metrics": {
+          "cumulative_return": 0.010411979887816836,
+          "cagr": 0.0017282437544747786,
+          "volatility": 0.009596372880205307,
+          "sharpe": 0.18708349623331416,
+          "max_drawdown": 0.01314239377431936,
+          "win_rate": 0.4444444444444444,
+          "number_of_trades": 27
+        }
+      },
+      {
+        "symbol": "ITC",
+        "metrics": {
+          "cumulative_return": -0.037836241063447185,
+          "cagr": -0.0064092752886382165,
+          "volatility": 0.011858142630281805,
+          "sharpe": -0.543423147666477,
+          "max_drawdown": 0.04480991123650668,
+          "win_rate": 0.2903225806451613,
+          "number_of_trades": 31
+        }
+      },
+      {
+        "symbol": "KPIL",
+        "metrics": {
+          "cumulative_return": -0.05697052878225739,
+          "cagr": -0.00973086742699536,
+          "volatility": 0.01457569170966112,
+          "sharpe": -0.6724115584794252,
+          "max_drawdown": 0.07215028307860472,
+          "win_rate": 0.3142857142857143,
+          "number_of_trades": 35
+        }
+      },
+      {
+        "symbol": "LT",
+        "metrics": {
+          "cumulative_return": -0.05921917282679545,
+          "cagr": -0.010124896638617265,
+          "volatility": 0.012878662956801292,
+          "sharpe": -0.7940937900914758,
+          "max_drawdown": 0.061731452371668105,
+          "win_rate": 0.3,
+          "number_of_trades": 30
+        }
+      },
+      {
+        "symbol": "OFSS",
+        "metrics": {
+          "cumulative_return": -0.015340137348810678,
+          "cagr": -0.0025737725525475375,
+          "volatility": 0.026970644049279284,
+          "sharpe": -0.0834710631053251,
+          "max_drawdown": 0.06753083994650921,
+          "win_rate": 0.48717948717948717,
+          "number_of_trades": 39
+        }
+      },
+      {
+        "symbol": "PERSISTENT",
+        "metrics": {
+          "cumulative_return": -0.031193547179275694,
+          "cagr": -0.0052690128128061176,
+          "volatility": 0.01521962277500367,
+          "sharpe": -0.3440606108571093,
+          "max_drawdown": 0.06388088246515822,
+          "win_rate": 0.4722222222222222,
+          "number_of_trades": 36
+        }
+      },
+      {
+        "symbol": "POLYCAB",
+        "metrics": {
+          "cumulative_return": 0.00877943064431519,
+          "cagr": 0.0014582472623489995,
+          "volatility": 0.020662258093190056,
+          "sharpe": 0.0817412452394605,
+          "max_drawdown": 0.050798459141395025,
+          "win_rate": 0.5333333333333333,
+          "number_of_trades": 45
+        }
+      },
+      {
+        "symbol": "POONAWALLA",
+        "metrics": {
+          "cumulative_return": 0.07172082713130923,
+          "cagr": 0.011613824998784938,
+          "volatility": 0.029833547856574227,
+          "sharpe": 0.4070187334164014,
+          "max_drawdown": 0.05689331819321175,
+          "win_rate": 0.5121951219512195,
+          "number_of_trades": 41
+        }
+      },
+      {
+        "symbol": "POWERINDIA",
+        "metrics": {
+          "cumulative_return": -0.12241634196310025,
+          "cagr": -0.022435009749270374,
+          "volatility": 0.02309548121825897,
+          "sharpe": -0.9847497646408222,
+          "max_drawdown": 0.1421291613071397,
+          "win_rate": 0.2894736842105263,
+          "number_of_trades": 38
+        }
+      },
+      {
+        "symbol": "RADICO",
+        "metrics": {
+          "cumulative_return": -0.08441798836343783,
+          "cagr": -0.014595022259896395,
+          "volatility": 0.026615384295229194,
+          "sharpe": -0.546208393519242,
+          "max_drawdown": 0.08788495067412416,
+          "win_rate": 0.3181818181818182,
+          "number_of_trades": 44
+        }
+      },
+      {
+        "symbol": "RBLBANK",
+        "metrics": {
+          "cumulative_return": -0.024829165715330226,
+          "cagr": -0.004182619443734548,
+          "volatility": 0.027584462594437486,
+          "sharpe": -0.14027886813428614,
+          "max_drawdown": 0.08642801324098104,
+          "win_rate": 0.3783783783783784,
+          "number_of_trades": 37
+        }
+      },
+      {
+        "symbol": "RELIANCE",
+        "metrics": {
+          "cumulative_return": -0.026407495230711286,
+          "cagr": -0.004451486493195267,
+          "volatility": 0.00966064659006359,
+          "sharpe": -0.46306745092698537,
+          "max_drawdown": 0.035269585542113235,
+          "win_rate": 0.375,
+          "number_of_trades": 24
+        }
+      },
+      {
+        "symbol": "SBIN",
+        "metrics": {
+          "cumulative_return": -0.06308146641594348,
+          "cagr": -0.010803520569101721,
+          "volatility": 0.01520105617819891,
+          "sharpe": -0.7162951582985618,
+          "max_drawdown": 0.06308146641594348,
+          "win_rate": 0.2903225806451613,
+          "number_of_trades": 31
+        }
+      },
+      {
+        "symbol": "SONACOMS",
+        "metrics": {
+          "cumulative_return": -0.04275847673842115,
+          "cagr": -0.009621049478312438,
+          "volatility": 0.015429997023361237,
+          "sharpe": -0.6277999578654725,
+          "max_drawdown": 0.0668209977583536,
+          "win_rate": 0.39285714285714285,
+          "number_of_trades": 28
+        }
+      },
+      {
+        "symbol": "SYRMA",
+        "metrics": {
+          "cumulative_return": 0.021619614950326937,
+          "cagr": 0.0064083568561985604,
+          "volatility": 0.015531647769437643,
+          "sharpe": 0.4253627611611539,
+          "max_drawdown": 0.015400805125690531,
+          "win_rate": 0.5652173913043478,
+          "number_of_trades": 23
+        }
+      },
+      {
+        "symbol": "TCS",
+        "metrics": {
+          "cumulative_return": -0.040437904079355436,
+          "cagr": -0.006857656324118944,
+          "volatility": 0.007829614411960378,
+          "sharpe": -0.886509207326561,
+          "max_drawdown": 0.045024252435024614,
+          "win_rate": 0.21428571428571427,
+          "number_of_trades": 28
+        }
+      }
+    ],
+    "mean_reversion": [
+      {
+        "symbol": "ALKEM",
+        "metrics": {
+          "cumulative_return": -0.06953794001603308,
+          "cagr": -0.011943178133029031,
+          "volatility": 0.018742346771135895,
+          "sharpe": -0.6399074032982955,
+          "max_drawdown": 0.07716976489628447,
+          "win_rate": 0.26666666666666666,
+          "number_of_trades": 15
+        }
+      },
+      {
+        "symbol": "ASHOKLEY",
+        "metrics": {
+          "cumulative_return": -0.07614141973815436,
+          "cagr": -0.013115621348933848,
+          "volatility": 0.021829656510910005,
+          "sharpe": -0.6016487007171814,
+          "max_drawdown": 0.09347630543210383,
+          "win_rate": 0.5263157894736842,
+          "number_of_trades": 19
+        }
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "metrics": {
+          "cumulative_return": 0.02242462953668234,
+          "cagr": 0.0037038348363287454,
+          "volatility": 0.018990595559373998,
+          "sharpe": 0.20649641333566612,
+          "max_drawdown": 0.0202477267294503,
+          "win_rate": 0.6153846153846154,
+          "number_of_trades": 13
+        }
+      },
+      {
+        "symbol": "BALAMINES",
+        "metrics": {
+          "cumulative_return": -0.03432411933001733,
+          "cagr": -0.005805581914711255,
+          "volatility": 0.026330671275091158,
+          "sharpe": -0.2108592656653144,
+          "max_drawdown": 0.06869314829633633,
+          "win_rate": 0.56,
+          "number_of_trades": 25
+        }
+      },
+      {
+        "symbol": "BHARATFORG",
+        "metrics": {
+          "cumulative_return": 0.033010970165053166,
+          "cagr": 0.005428886860363358,
+          "volatility": 0.014185729970046823,
+          "sharpe": 0.3937259300852334,
+          "max_drawdown": 0.016375898467744232,
+          "win_rate": 0.75,
+          "number_of_trades": 12
+        }
+      },
+      {
+        "symbol": "BHARTIARTL",
+        "metrics": {
+          "cumulative_return": 0.012352825276783053,
+          "cagr": 0.002048754736756697,
+          "volatility": 0.010953924053741251,
+          "sharpe": 0.19475469968433948,
+          "max_drawdown": 0.011885235856820997,
+          "win_rate": 0.625,
+          "number_of_trades": 16
+        }
+      },
+      {
+        "symbol": "BHEL",
+        "metrics": {
+          "cumulative_return": 0.018183802773573232,
+          "cagr": 0.00300861131952046,
+          "volatility": 0.016895702196746756,
+          "sharpe": 0.18864196724162907,
+          "max_drawdown": 0.02876764593146175,
+          "win_rate": 0.7241379310344828,
+          "number_of_trades": 29
+        }
+      },
+      {
+        "symbol": "CAMPUS",
+        "metrics": {
+          "cumulative_return": 0.015194507836711724,
+          "cagr": 0.004143736621155858,
+          "volatility": 0.013098897744304675,
+          "sharpe": 0.3260568720461426,
+          "max_drawdown": 0.015193586259055647,
+          "win_rate": 0.5,
+          "number_of_trades": 12
+        }
+      },
+      {
+        "symbol": "CESC",
+        "metrics": {
+          "cumulative_return": 0.012239276027573576,
+          "cagr": 0.0020300173351988082,
+          "volatility": 0.01737887122883721,
+          "sharpe": 0.12684067999727705,
+          "max_drawdown": 0.029593611739915815,
+          "win_rate": 0.5185185185185185,
+          "number_of_trades": 27
+        }
+      },
+      {
+        "symbol": "FEDERALBNK",
+        "metrics": {
+          "cumulative_return": 0.06616619845824845,
+          "cagr": 0.010737882166660606,
+          "volatility": 0.021946714403732512,
+          "sharpe": 0.503866810161014,
+          "max_drawdown": 0.01454014918040103,
+          "win_rate": 0.6875,
+          "number_of_trades": 16
+        }
+      },
+      {
+        "symbol": "HDFCBANK",
+        "metrics": {
+          "cumulative_return": 0.014128069996775183,
+          "cagr": 0.002341470389790601,
+          "volatility": 0.010293944520841508,
+          "sharpe": 0.2352970797034015,
+          "max_drawdown": 0.013879606460002636,
+          "win_rate": 0.5833333333333334,
+          "number_of_trades": 12
+        }
+      },
+      {
+        "symbol": "HFCL",
+        "metrics": {
+          "cumulative_return": -0.005645726475482338,
+          "cagr": -0.0009433907052177615,
+          "volatility": 0.024665607377897632,
+          "sharpe": -0.026395224615528283,
+          "max_drawdown": 0.06650716512480992,
+          "win_rate": 0.7083333333333334,
+          "number_of_trades": 24
+        }
+      },
+      {
+        "symbol": "HINDUNILVR",
+        "metrics": {
+          "cumulative_return": -0.029788715001978106,
+          "cagr": -0.005028699027424421,
+          "volatility": 0.0089124545180976,
+          "sharpe": -0.568634615008089,
+          "max_drawdown": 0.04818272800886014,
+          "win_rate": 0.47619047619047616,
+          "number_of_trades": 21
+        }
+      },
+      {
+        "symbol": "ICICIBANK",
+        "metrics": {
+          "cumulative_return": -0.01906867952041935,
+          "cagr": -0.0032043924719437067,
+          "volatility": 0.014422602786266536,
+          "sharpe": -0.21828596282710952,
+          "max_drawdown": 0.04125733386449948,
+          "win_rate": 0.3333333333333333,
+          "number_of_trades": 15
+        }
+      },
+      {
+        "symbol": "INFY",
+        "metrics": {
+          "cumulative_return": -0.0625134723140276,
+          "cagr": -0.010703575186529979,
+          "volatility": 0.013166152965303246,
+          "sharpe": -0.8214631213259481,
+          "max_drawdown": 0.06567007904640387,
+          "win_rate": 0.29411764705882354,
+          "number_of_trades": 17
+        }
+      },
+      {
+        "symbol": "ITC",
+        "metrics": {
+          "cumulative_return": -0.005603310701348452,
+          "cagr": -0.0009362864839584928,
+          "volatility": 0.011273626157548006,
+          "sharpe": -0.07857118674125706,
+          "max_drawdown": 0.02126554961683136,
+          "win_rate": 0.5555555555555556,
+          "number_of_trades": 18
+        }
+      },
+      {
+        "symbol": "KPIL",
+        "metrics": {
+          "cumulative_return": -0.033495956223813184,
+          "cagr": -0.005663496815365043,
+          "volatility": 0.010661141336103295,
+          "sharpe": -0.5344271818591536,
+          "max_drawdown": 0.05512717102319098,
+          "win_rate": 0.375,
+          "number_of_trades": 16
+        }
+      },
+      {
+        "symbol": "LT",
+        "metrics": {
+          "cumulative_return": 0.021873724944373674,
+          "cagr": 0.003613657782975954,
+          "volatility": 0.014869744874725253,
+          "sharpe": 0.2531362760168023,
+          "max_drawdown": 0.013781061553132856,
+          "win_rate": 0.42105263157894735,
+          "number_of_trades": 19
+        }
+      },
+      {
+        "symbol": "OFSS",
+        "metrics": {
+          "cumulative_return": -0.01070542257119933,
+          "cagr": -0.001792656951651872,
+          "volatility": 0.013073959118221505,
+          "sharpe": -0.13255016027084535,
+          "max_drawdown": 0.034424916467952205,
+          "win_rate": 0.47058823529411764,
+          "number_of_trades": 17
+        }
+      },
+      {
+        "symbol": "PERSISTENT",
+        "metrics": {
+          "cumulative_return": -0.08264509916857066,
+          "cagr": -0.01427719083511303,
+          "volatility": 0.01722791150059878,
+          "sharpe": -0.8370766466866418,
+          "max_drawdown": 0.10439408395015304,
+          "win_rate": 0.38095238095238093,
+          "number_of_trades": 21
+        }
+      },
+      {
+        "symbol": "POLYCAB",
+        "metrics": {
+          "cumulative_return": -0.04426762460133504,
+          "cagr": -0.0075195324103489725,
+          "volatility": 0.015781375372956288,
+          "sharpe": -0.47663828640179307,
+          "max_drawdown": 0.07270783310577522,
+          "win_rate": 0.43478260869565216,
+          "number_of_trades": 23
+        }
+      },
+      {
+        "symbol": "POONAWALLA",
+        "metrics": {
+          "cumulative_return": -0.05556732225782757,
+          "cagr": -0.009485380520009357,
+          "volatility": 0.031117187837537155,
+          "sharpe": -0.2947533860869622,
+          "max_drawdown": 0.10723059015119407,
+          "win_rate": 0.6071428571428571,
+          "number_of_trades": 28
+        }
+      },
+      {
+        "symbol": "POWERINDIA",
+        "metrics": {
+          "cumulative_return": 0.03026499720553444,
+          "cagr": 0.005194372632678856,
+          "volatility": 0.01910571774043174,
+          "sharpe": 0.2845354759984105,
+          "max_drawdown": 0.03282927301185545,
+          "win_rate": 0.5333333333333333,
+          "number_of_trades": 30
+        }
+      },
+      {
+        "symbol": "RADICO",
+        "metrics": {
+          "cumulative_return": 0.015021040302086286,
+          "cagr": 0.002488548650711131,
+          "volatility": 0.025211366152729998,
+          "sharpe": 0.11238032582673238,
+          "max_drawdown": 0.047727710725124495,
+          "win_rate": 0.5263157894736842,
+          "number_of_trades": 19
+        }
+      },
+      {
+        "symbol": "RBLBANK",
+        "metrics": {
+          "cumulative_return": 0.037003194495760505,
+          "cagr": 0.00607559897400356,
+          "volatility": 0.020084854213040976,
+          "sharpe": 0.31558473442210927,
+          "max_drawdown": 0.025700294114097133,
+          "win_rate": 0.5,
+          "number_of_trades": 20
+        }
+      },
+      {
+        "symbol": "RELIANCE",
+        "metrics": {
+          "cumulative_return": -0.016335770423418383,
+          "cagr": -0.0027419720716453932,
+          "volatility": 0.008428149449034618,
+          "sharpe": -0.32584905172052964,
+          "max_drawdown": 0.03774538054436294,
+          "win_rate": 0.5,
+          "number_of_trades": 14
+        }
+      },
+      {
+        "symbol": "SBIN",
+        "metrics": {
+          "cumulative_return": 0.07414836323240781,
+          "cagr": 0.011995450283557085,
+          "volatility": 0.02325368868176519,
+          "sharpe": 0.530956913942574,
+          "max_drawdown": 0.017594155532189126,
+          "win_rate": 0.6875,
+          "number_of_trades": 16
+        }
+      },
+      {
+        "symbol": "SONACOMS",
+        "metrics": {
+          "cumulative_return": 0.013554368895837943,
+          "cagr": 0.00298292667750788,
+          "volatility": 0.01221126589053991,
+          "sharpe": 0.25350183567716356,
+          "max_drawdown": 0.017789193179763463,
+          "win_rate": 0.5454545454545454,
+          "number_of_trades": 11
+        }
+      },
+      {
+        "symbol": "SYRMA",
+        "metrics": {
+          "cumulative_return": -0.012804411588988485,
+          "cagr": -0.00384134496117694,
+          "volatility": 0.008722231643161053,
+          "sharpe": -0.4436861667374426,
+          "max_drawdown": 0.0262314793908357,
+          "win_rate": 0.3333333333333333,
+          "number_of_trades": 12
+        }
+      },
+      {
+        "symbol": "TCS",
+        "metrics": {
+          "cumulative_return": 0.0018689237114990487,
+          "cagr": 0.0003113160402195003,
+          "volatility": 0.007269480147552069,
+          "sharpe": 0.046998003657629524,
+          "max_drawdown": 0.011471475206212944,
+          "win_rate": 0.4444444444444444,
+          "number_of_trades": 18
+        }
+      }
+    ],
+    "momentum": [
+      {
+        "symbol": "ALKEM",
+        "metrics": {
+          "cumulative_return": -0.06184020980891747,
+          "cagr": -0.01058517189690189,
+          "volatility": 0.04565823492450072,
+          "sharpe": -0.21326732081780517,
+          "max_drawdown": 0.1181319416758081,
+          "win_rate": 0.3252032520325203,
+          "number_of_trades": 123
+        }
+      },
+      {
+        "symbol": "ASHOKLEY",
+        "metrics": {
+          "cumulative_return": -0.015233690976542036,
+          "cagr": -0.0025557981815982345,
+          "volatility": 0.07121939134356056,
+          "sharpe": -0.0009099378031897082,
+          "max_drawdown": 0.20227700648926794,
+          "win_rate": 0.29457364341085274,
+          "number_of_trades": 129
+        }
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "metrics": {
+          "cumulative_return": -0.059678997455567595,
+          "cagr": -0.01020556820290297,
+          "volatility": 0.06248819144925173,
+          "sharpe": -0.13515349934576532,
+          "max_drawdown": 0.15140505132136228,
+          "win_rate": 0.3220338983050847,
+          "number_of_trades": 118
+        }
+      },
+      {
+        "symbol": "BALAMINES",
+        "metrics": {
+          "cumulative_return": 0.15938753664130068,
+          "cagr": 0.024960701287659814,
+          "volatility": 0.08706024157233816,
+          "sharpe": 0.3302372998592676,
+          "max_drawdown": 0.21350645238172872,
+          "win_rate": 0.32558139534883723,
+          "number_of_trades": 129
+        }
+      },
+      {
+        "symbol": "BHARATFORG",
+        "metrics": {
+          "cumulative_return": 0.04443806159102692,
+          "cagr": 0.0072744852565467255,
+          "volatility": 0.06392875868569965,
+          "sharpe": 0.1467969887721084,
+          "max_drawdown": 0.11782376069713707,
+          "win_rate": 0.31496062992125984,
+          "number_of_trades": 127
+        }
+      },
+      {
+        "symbol": "BHARTIARTL",
+        "metrics": {
+          "cumulative_return": -0.012285454576437926,
+          "cagr": -0.0020586057584053297,
+          "volatility": 0.04599599857616099,
+          "sharpe": -0.02243323739072472,
+          "max_drawdown": 0.09430308065270643,
+          "win_rate": 0.37398373983739835,
+          "number_of_trades": 123
+        }
+      },
+      {
+        "symbol": "BHEL",
+        "metrics": {
+          "cumulative_return": 0.20543605735351322,
+          "cagr": 0.03163748954664891,
+          "volatility": 0.0869734404079918,
+          "sharpe": 0.4062942550900708,
+          "max_drawdown": 0.15162157416870525,
+          "win_rate": 0.3790322580645161,
+          "number_of_trades": 124
+        }
+      },
+      {
+        "symbol": "CAMPUS",
+        "metrics": {
+          "cumulative_return": 0.09721795597484828,
+          "cagr": 0.025767150074053724,
+          "volatility": 0.06141904021892884,
+          "sharpe": 0.4498874742257599,
+          "max_drawdown": 0.08379391042574935,
+          "win_rate": 0.4189189189189189,
+          "number_of_trades": 74
+        }
+      },
+      {
+        "symbol": "CESC",
+        "metrics": {
+          "cumulative_return": -0.04925928363535825,
+          "cagr": -0.008385547559876305,
+          "volatility": 0.059157368431955404,
+          "sharpe": -0.11469800476612048,
+          "max_drawdown": 0.20808317854683034,
+          "win_rate": 0.31496062992125984,
+          "number_of_trades": 127
+        }
+      },
+      {
+        "symbol": "FEDERALBNK",
+        "metrics": {
+          "cumulative_return": -0.09242918867469307,
+          "cagr": -0.016037641804364067,
+          "volatility": 0.060277721020735864,
+          "sharpe": -0.24163715565135305,
+          "max_drawdown": 0.24472702522332157,
+          "win_rate": 0.3111111111111111,
+          "number_of_trades": 135
+        }
+      },
+      {
+        "symbol": "HDFCBANK",
+        "metrics": {
+          "cumulative_return": -0.2040150069419835,
+          "cagr": -0.03732348382190109,
+          "volatility": 0.041524894185958755,
+          "sharpe": -0.9072893303007253,
+          "max_drawdown": 0.2532417428419237,
+          "win_rate": 0.256,
+          "number_of_trades": 125
+        }
+      },
+      {
+        "symbol": "HFCL",
+        "metrics": {
+          "cumulative_return": 0.1099748453584104,
+          "cagr": 0.017545675525282967,
+          "volatility": 0.1124250122287524,
+          "sharpe": 0.21251038400081718,
+          "max_drawdown": 0.2586944587396415,
+          "win_rate": 0.3819444444444444,
+          "number_of_trades": 144
+        }
+      },
+      {
+        "symbol": "HINDUNILVR",
+        "metrics": {
+          "cumulative_return": -0.13029938331556556,
+          "cagr": -0.023004289459881755,
+          "volatility": 0.03679109916248499,
+          "sharpe": -0.6224880446363495,
+          "max_drawdown": 0.1646691185316448,
+          "win_rate": 0.312,
+          "number_of_trades": 125
+        }
+      },
+      {
+        "symbol": "ICICIBANK",
+        "metrics": {
+          "cumulative_return": -0.18852152612205875,
+          "cagr": -0.034224797750181946,
+          "volatility": 0.04750683301260344,
+          "sharpe": -0.7189187071333452,
+          "max_drawdown": 0.24381622890596033,
+          "win_rate": 0.2558139534883721,
+          "number_of_trades": 129
+        }
+      },
+      {
+        "symbol": "INFY",
+        "metrics": {
+          "cumulative_return": 0.11071863796858006,
+          "cagr": 0.01765931239506835,
+          "volatility": 0.04485009285274263,
+          "sharpe": 0.4178434384722915,
+          "max_drawdown": 0.06008484485611065,
+          "win_rate": 0.3826086956521739,
+          "number_of_trades": 115
+        }
+      },
+      {
+        "symbol": "ITC",
+        "metrics": {
+          "cumulative_return": -0.1386586385873556,
+          "cagr": -0.024576042435061396,
+          "volatility": 0.03815925237416192,
+          "sharpe": -0.6415703538826101,
+          "max_drawdown": 0.19060376066268903,
+          "win_rate": 0.2682926829268293,
+          "number_of_trades": 123
+        }
+      },
+      {
+        "symbol": "KPIL",
+        "metrics": {
+          "cumulative_return": -0.129053732345366,
+          "cagr": -0.022771154137310123,
+          "volatility": 0.06440589613386721,
+          "sharpe": -0.3301679838125825,
+          "max_drawdown": 0.24246520200246469,
+          "win_rate": 0.27205882352941174,
+          "number_of_trades": 136
+        }
+      },
+      {
+        "symbol": "LT",
+        "metrics": {
+          "cumulative_return": -0.0258833698574652,
+          "cagr": -0.0043621619410212364,
+          "volatility": 0.04697129901687788,
+          "sharpe": -0.07084095660606177,
+          "max_drawdown": 0.1845742076940765,
+          "win_rate": 0.304,
+          "number_of_trades": 125
+        }
+      },
+      {
+        "symbol": "OFSS",
+        "metrics": {
+          "cumulative_return": 0.286532669417326,
+          "cagr": 0.042895911548443966,
+          "volatility": 0.06821408003269952,
+          "sharpe": 0.6576584285584245,
+          "max_drawdown": 0.07155088746660498,
+          "win_rate": 0.35074626865671643,
+          "number_of_trades": 134
+        }
+      },
+      {
+        "symbol": "PERSISTENT",
+        "metrics": {
+          "cumulative_return": 0.412647927359276,
+          "cagr": 0.05928143904846217,
+          "volatility": 0.06961716836010266,
+          "sharpe": 0.8730119795538008,
+          "max_drawdown": 0.12752066591204647,
+          "win_rate": 0.4107142857142857,
+          "number_of_trades": 112
+        }
+      },
+      {
+        "symbol": "POLYCAB",
+        "metrics": {
+          "cumulative_return": 0.19038755970384358,
+          "cagr": 0.029479276572752067,
+          "volatility": 0.0632935798855685,
+          "sharpe": 0.49660518543105864,
+          "max_drawdown": 0.14488432981624388,
+          "win_rate": 0.38461538461538464,
+          "number_of_trades": 117
+        }
+      },
+      {
+        "symbol": "POONAWALLA",
+        "metrics": {
+          "cumulative_return": 0.5264941050527039,
+          "cagr": 0.07305712353552507,
+          "volatility": 0.09689645086890564,
+          "sharpe": 0.7856390192646807,
+          "max_drawdown": 0.11591986229482076,
+          "win_rate": 0.336283185840708,
+          "number_of_trades": 113
+        }
+      },
+      {
+        "symbol": "POWERINDIA",
+        "metrics": {
+          "cumulative_return": -0.06534317963426761,
+          "cagr": -0.011673518276712369,
+          "volatility": 0.08494026768763809,
+          "sharpe": -0.0978052462861623,
+          "max_drawdown": 0.22657296011245975,
+          "win_rate": 0.3125,
+          "number_of_trades": 128
+        }
+      },
+      {
+        "symbol": "RADICO",
+        "metrics": {
+          "cumulative_return": -0.010870077689093982,
+          "cagr": -0.0018203549465782842,
+          "volatility": 0.06616575337017988,
+          "sharpe": 0.005091480885807586,
+          "max_drawdown": 0.14198139182721525,
+          "win_rate": 0.3125,
+          "number_of_trades": 144
+        }
+      },
+      {
+        "symbol": "RBLBANK",
+        "metrics": {
+          "cumulative_return": -0.017607792626321617,
+          "cagr": -0.0029570705386586793,
+          "volatility": 0.08548229366901766,
+          "sharpe": 0.007506147452619039,
+          "max_drawdown": 0.22017337273543014,
+          "win_rate": 0.3103448275862069,
+          "number_of_trades": 145
+        }
+      },
+      {
+        "symbol": "RELIANCE",
+        "metrics": {
+          "cumulative_return": -0.02538333134707016,
+          "cagr": -0.004276979737692255,
+          "volatility": 0.046749656786416724,
+          "sharpe": -0.0695540909802078,
+          "max_drawdown": 0.15436850165294724,
+          "win_rate": 0.3305084745762712,
+          "number_of_trades": 118
+        }
+      },
+      {
+        "symbol": "SBIN",
+        "metrics": {
+          "cumulative_return": 0.02439500596975619,
+          "cagr": 0.004026032871055518,
+          "volatility": 0.05284392012979316,
+          "sharpe": 0.10341956353532324,
+          "max_drawdown": 0.15644619979341734,
+          "win_rate": 0.296,
+          "number_of_trades": 125
+        }
+      },
+      {
+        "symbol": "SONACOMS",
+        "metrics": {
+          "cumulative_return": -0.16263393265164094,
+          "cagr": -0.03850595513416377,
+          "volatility": 0.0667236651351663,
+          "sharpe": -0.5635809955258734,
+          "max_drawdown": 0.25250286829634716,
+          "win_rate": 0.2616822429906542,
+          "number_of_trades": 107
+        }
+      },
+      {
+        "symbol": "SYRMA",
+        "metrics": {
+          "cumulative_return": -0.047364799460183904,
+          "cagr": -0.01438701054672542,
+          "volatility": 0.07686666453402825,
+          "sharpe": -0.15305237006204117,
+          "max_drawdown": 0.13058601531765068,
+          "win_rate": 0.2894736842105263,
+          "number_of_trades": 76
+        }
+      },
+      {
+        "symbol": "TCS",
+        "metrics": {
+          "cumulative_return": -0.07283483449067762,
+          "cagr": -0.012527669649949114,
+          "volatility": 0.03978588058127059,
+          "sharpe": -0.30116898313711354,
+          "max_drawdown": 0.13240022658052975,
+          "win_rate": 0.319672131147541,
+          "number_of_trades": 122
+        }
+      }
+    ],
+    "trend_following": [
+      {
+        "symbol": "ALKEM",
+        "metrics": {
+          "cumulative_return": -0.11062088626304922,
+          "cagr": -0.019353345070764916,
+          "volatility": 0.040037412973163655,
+          "sharpe": -0.4744775321561934,
+          "max_drawdown": 0.11763866325376693,
+          "win_rate": 0.29896907216494845,
+          "number_of_trades": 97
+        }
+      },
+      {
+        "symbol": "ASHOKLEY",
+        "metrics": {
+          "cumulative_return": -0.08972336362123734,
+          "cagr": -0.01554920689560002,
+          "volatility": 0.0647932372446436,
+          "sharpe": -0.21279077028478485,
+          "max_drawdown": 0.22508357947532442,
+          "win_rate": 0.27,
+          "number_of_trades": 100
+        }
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "metrics": {
+          "cumulative_return": 0.0700022499414672,
+          "cagr": 0.011343217189635268,
+          "volatility": 0.054733563307209396,
+          "sharpe": 0.23615464135133207,
+          "max_drawdown": 0.1452853484004426,
+          "win_rate": 0.3146067415730337,
+          "number_of_trades": 89
+        }
+      },
+      {
+        "symbol": "BALAMINES",
+        "metrics": {
+          "cumulative_return": 0.42481630018761196,
+          "cagr": 0.06079710850767239,
+          "volatility": 0.07924677414023118,
+          "sharpe": 0.7940553007430289,
+          "max_drawdown": 0.16251774669092167,
+          "win_rate": 0.30864197530864196,
+          "number_of_trades": 81
+        }
+      },
+      {
+        "symbol": "BHARATFORG",
+        "metrics": {
+          "cumulative_return": 0.009790914064252476,
+          "cagr": 0.0016255726673830573,
+          "volatility": 0.05775969575733386,
+          "sharpe": 0.057290898755523616,
+          "max_drawdown": 0.2088532713280421,
+          "win_rate": 0.2857142857142857,
+          "number_of_trades": 105
+        }
+      },
+      {
+        "symbol": "BHARTIARTL",
+        "metrics": {
+          "cumulative_return": -0.1073652727333293,
+          "cagr": -0.01875583542103021,
+          "volatility": 0.043266216061444145,
+          "sharpe": -0.4217599694273871,
+          "max_drawdown": 0.12967071674301334,
+          "win_rate": 0.26548672566371684,
+          "number_of_trades": 113
+        }
+      },
+      {
+        "symbol": "BHEL",
+        "metrics": {
+          "cumulative_return": 0.1402002199704815,
+          "cagr": 0.02211325569611211,
+          "volatility": 0.08021317178816194,
+          "sharpe": 0.3163999695067441,
+          "max_drawdown": 0.15447379308144882,
+          "win_rate": 0.375,
+          "number_of_trades": 88
+        }
+      },
+      {
+        "symbol": "CAMPUS",
+        "metrics": {
+          "cumulative_return": -0.11605737014975837,
+          "cagr": -0.03326185511277524,
+          "volatility": 0.05764483830566961,
+          "sharpe": -0.5650458556494037,
+          "max_drawdown": 0.23531993804236595,
+          "win_rate": 0.23333333333333334,
+          "number_of_trades": 60
+        }
+      },
+      {
+        "symbol": "CESC",
+        "metrics": {
+          "cumulative_return": -0.1259644187558694,
+          "cagr": -0.022194156763000406,
+          "volatility": 0.05520755712737064,
+          "sharpe": -0.38431474965457324,
+          "max_drawdown": 0.18593781309517332,
+          "win_rate": 0.22448979591836735,
+          "number_of_trades": 98
+        }
+      },
+      {
+        "symbol": "FEDERALBNK",
+        "metrics": {
+          "cumulative_return": -0.051118271986742125,
+          "cagr": -0.008709036440439188,
+          "volatility": 0.05579630211922766,
+          "sharpe": -0.13099934523052628,
+          "max_drawdown": 0.1917709718195988,
+          "win_rate": 0.2912621359223301,
+          "number_of_trades": 103
+        }
+      },
+      {
+        "symbol": "HDFCBANK",
+        "metrics": {
+          "cumulative_return": -0.21864722673883275,
+          "cagr": -0.04029641418044694,
+          "volatility": 0.037947938334266705,
+          "sharpe": -1.0791091990493105,
+          "max_drawdown": 0.26054668596472363,
+          "win_rate": 0.20535714285714285,
+          "number_of_trades": 112
+        }
+      },
+      {
+        "symbol": "HFCL",
+        "metrics": {
+          "cumulative_return": -0.09087080133259462,
+          "cagr": -0.015756185660321775,
+          "volatility": 0.09152774166685451,
+          "sharpe": -0.13036980171474297,
+          "max_drawdown": 0.32422251208077335,
+          "win_rate": 0.27722772277227725,
+          "number_of_trades": 101
+        }
+      },
+      {
+        "symbol": "HINDUNILVR",
+        "metrics": {
+          "cumulative_return": -0.1544865526949467,
+          "cagr": -0.027587242440559878,
+          "volatility": 0.028871355620520883,
+          "sharpe": -0.9672359445315897,
+          "max_drawdown": 0.16128153709533455,
+          "win_rate": 0.2621359223300971,
+          "number_of_trades": 103
+        }
+      },
+      {
+        "symbol": "ICICIBANK",
+        "metrics": {
+          "cumulative_return": -0.06156409873252733,
+          "cagr": -0.010536634103688103,
+          "volatility": 0.043489030408447996,
+          "sharpe": -0.22508589322004582,
+          "max_drawdown": 0.1385020861515981,
+          "win_rate": 0.26732673267326734,
+          "number_of_trades": 101
+        }
+      },
+      {
+        "symbol": "INFY",
+        "metrics": {
+          "cumulative_return": -0.04677124510494923,
+          "cagr": -0.007953419298089015,
+          "volatility": 0.04375919813867755,
+          "sharpe": -0.16301529304016446,
+          "max_drawdown": 0.14114373405075187,
+          "win_rate": 0.2826086956521739,
+          "number_of_trades": 92
+        }
+      },
+      {
+        "symbol": "ITC",
+        "metrics": {
+          "cumulative_return": -0.06539925361730148,
+          "cagr": -0.011211887176500901,
+          "volatility": 0.03866767867295165,
+          "sharpe": -0.2761266352676646,
+          "max_drawdown": 0.10168401404035177,
+          "win_rate": 0.24271844660194175,
+          "number_of_trades": 103
+        }
+      },
+      {
+        "symbol": "KPIL",
+        "metrics": {
+          "cumulative_return": -0.034418241387779824,
+          "cagr": -0.00582173653795337,
+          "volatility": 0.06357061613139295,
+          "sharpe": -0.06130192865527483,
+          "max_drawdown": 0.14989136188477736,
+          "win_rate": 0.3069306930693069,
+          "number_of_trades": 101
+        }
+      },
+      {
+        "symbol": "LT",
+        "metrics": {
+          "cumulative_return": -0.03579183566002453,
+          "cagr": -0.006057642591364543,
+          "volatility": 0.04196892922927935,
+          "sharpe": -0.12573301181268784,
+          "max_drawdown": 0.1354549506922914,
+          "win_rate": 0.22826086956521738,
+          "number_of_trades": 92
+        }
+      },
+      {
+        "symbol": "OFSS",
+        "metrics": {
+          "cumulative_return": 0.1003560264407537,
+          "cagr": 0.01607036333763734,
+          "volatility": 0.06671596771480186,
+          "sharpe": 0.2751286207515165,
+          "max_drawdown": 0.1276556042329785,
+          "win_rate": 0.30434782608695654,
+          "number_of_trades": 92
+        }
+      },
+      {
+        "symbol": "PERSISTENT",
+        "metrics": {
+          "cumulative_return": 0.5017181911607447,
+          "cagr": 0.07013390344181847,
+          "volatility": 0.0654351611658891,
+          "sharpe": 1.0823271752663817,
+          "max_drawdown": 0.11390738741911077,
+          "win_rate": 0.38666666666666666,
+          "number_of_trades": 75
+        }
+      },
+      {
+        "symbol": "POLYCAB",
+        "metrics": {
+          "cumulative_return": 0.017809276501398408,
+          "cagr": 0.0029470971476348584,
+          "volatility": 0.055790711915191374,
+          "sharpe": 0.08122499933327978,
+          "max_drawdown": 0.11383671338099555,
+          "win_rate": 0.2978723404255319,
+          "number_of_trades": 94
+        }
+      },
+      {
+        "symbol": "POONAWALLA",
+        "metrics": {
+          "cumulative_return": 0.361803210753159,
+          "cagr": 0.0528281618254649,
+          "volatility": 0.08130471051922357,
+          "sharpe": 0.6819889317968745,
+          "max_drawdown": 0.10567654517703207,
+          "win_rate": 0.30612244897959184,
+          "number_of_trades": 98
+        }
+      },
+      {
+        "symbol": "POWERINDIA",
+        "metrics": {
+          "cumulative_return": 0.11174786736140452,
+          "cagr": 0.01857777873849975,
+          "volatility": 0.07734291592043746,
+          "sharpe": 0.27991489557211235,
+          "max_drawdown": 0.1363716656382653,
+          "win_rate": 0.2608695652173913,
+          "number_of_trades": 92
+        }
+      },
+      {
+        "symbol": "RADICO",
+        "metrics": {
+          "cumulative_return": -0.04998111424583729,
+          "cagr": -0.008511093108709455,
+          "volatility": 0.06216153808258993,
+          "sharpe": -0.10835689328851476,
+          "max_drawdown": 0.11950666622011719,
+          "win_rate": 0.32432432432432434,
+          "number_of_trades": 111
+        }
+      },
+      {
+        "symbol": "RBLBANK",
+        "metrics": {
+          "cumulative_return": 0.3159791943013679,
+          "cagr": 0.04683774376146488,
+          "volatility": 0.07598729429300638,
+          "sharpe": 0.6481648802649225,
+          "max_drawdown": 0.13458860774896664,
+          "win_rate": 0.4479166666666667,
+          "number_of_trades": 96
+        }
+      },
+      {
+        "symbol": "RELIANCE",
+        "metrics": {
+          "cumulative_return": -0.09614929438585962,
+          "cagr": -0.01671115176013338,
+          "volatility": 0.0435298214521112,
+          "sharpe": -0.370494804363572,
+          "max_drawdown": 0.17617196286720915,
+          "win_rate": 0.22340425531914893,
+          "number_of_trades": 94
+        }
+      },
+      {
+        "symbol": "SBIN",
+        "metrics": {
+          "cumulative_return": 0.03525231444118293,
+          "cagr": 0.005792224657917622,
+          "volatility": 0.04968893785471901,
+          "sharpe": 0.142599657707683,
+          "max_drawdown": 0.09775744266309616,
+          "win_rate": 0.3170731707317073,
+          "number_of_trades": 82
+        }
+      },
+      {
+        "symbol": "SONACOMS",
+        "metrics": {
+          "cumulative_return": -0.08944563670155092,
+          "cagr": -0.02051619925287229,
+          "volatility": 0.05753370878271353,
+          "sharpe": -0.33671157873851537,
+          "max_drawdown": 0.15475222462347327,
+          "win_rate": 0.32894736842105265,
+          "number_of_trades": 76
+        }
+      },
+      {
+        "symbol": "SYRMA",
+        "metrics": {
+          "cumulative_return": -0.0047126990944244,
+          "cagr": -0.0014097838549818054,
+          "volatility": 0.07351238436843956,
+          "sharpe": 0.017246880856628587,
+          "max_drawdown": 0.19288184529916264,
+          "win_rate": 0.43137254901960786,
+          "number_of_trades": 51
+        }
+      },
+      {
+        "symbol": "TCS",
+        "metrics": {
+          "cumulative_return": -0.06816843244015058,
+          "cagr": -0.011700891549372927,
+          "volatility": 0.03644378742961719,
+          "sharpe": -0.3090088109856278,
+          "max_drawdown": 0.15519795268433345,
+          "win_rate": 0.26136363636363635,
+          "number_of_trades": 88
+        }
+      }
+    ]
+  },
+  "aggregate_stock_breadth": {
+    "breakout": {
+      "label": "cross-sectional breadth analysis; not out-of-sample generalization",
+      "number_of_stocks": 30,
+      "mean_stock_return": -0.032622965164845606,
+      "median_stock_return": -0.031224917290089027,
+      "mean_sharpe": -0.36316535948556455,
+      "median_sharpe": -0.3445302665365597,
+      "positive_return_percentage": 20.0,
+      "positive_sharpe_percentage": 20.0,
+      "best_stock": {
+        "symbol": "POONAWALLA",
+        "return": 0.07172082713130923
+      },
+      "worst_stock": {
+        "symbol": "BHARATFORG",
+        "return": -0.12643756614293966
+      },
+      "positive_return_concentration_top_fraction": 1.0
+    },
+    "mean_reversion": {
+      "label": "cross-sectional breadth analysis; not out-of-sample generalization",
+      "number_of_stocks": 30,
+      "mean_stock_return": -0.005700336569123761,
+      "median_stock_return": -0.0018671934949247015,
+      "mean_sharpe": -0.07459907807219887,
+      "median_sharpe": 0.01030138952105062,
+      "positive_return_percentage": 50.0,
+      "positive_sharpe_percentage": 50.0,
+      "best_stock": {
+        "symbol": "SBIN",
+        "return": 0.07414836323240781
+      },
+      "worst_stock": {
+        "symbol": "PERSISTENT",
+        "return": -0.08264509916857066
+      },
+      "positive_return_concentration_top_fraction": 0.6788711030977665
+    },
+    "momentum": {
+      "label": "cross-sectional breadth analysis; not out-of-sample generalization",
+      "number_of_stocks": 30,
+      "mean_stock_return": 0.021947797739800615,
+      "median_stock_return": -0.021495561986695888,
+      "mean_sharpe": -0.010401152434533368,
+      "median_sharpe": -0.045993664185466264,
+      "positive_return_percentage": 36.666666666666664,
+      "positive_sharpe_percentage": 43.333333333333336,
+      "best_stock": {
+        "symbol": "POONAWALLA",
+        "return": 0.5264941050527039
+      },
+      "worst_stock": {
+        "symbol": "HDFCBANK",
+        "return": -0.2040150069419835
+      },
+      "positive_return_concentration_top_fraction": 0.8215818925713432
+    },
+    "trend_following": {
+      "label": "cross-sectional breadth analysis; not out-of-sample generalization",
+      "number_of_stocks": 30,
+      "mean_stock_return": 0.015740658315901976,
+      "median_stock_return": -0.04837617967539326,
+      "mean_sharpe": -0.05764803883881841,
+      "median_sharpe": -0.1280514067637154,
+      "positive_return_percentage": 36.666666666666664,
+      "positive_sharpe_percentage": 40.0,
+      "best_stock": {
+        "symbol": "PERSISTENT",
+        "return": 0.5017181911607447
+      },
+      "worst_stock": {
+        "symbol": "HDFCBANK",
+        "return": -0.21864722673883275
+      },
+      "positive_return_concentration_top_fraction": 0.8883878983993699
+    }
+  },
+  "regime_results": {
+    "breakout": {
+      "BULL_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 583,
+        "number_of_trades": 423,
+        "return": -0.41138435931324036,
+        "sharpe": -2.373892706965652,
+        "max_drawdown": 0.41138435931324036,
+        "win_rate": 0.3664302600472813,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BULL_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 388,
+        "number_of_trades": 301,
+        "return": -0.15241655501965667,
+        "sharpe": -0.9899165779232739,
+        "max_drawdown": 0.27458062144617457,
+        "win_rate": 0.3853820598006645,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 199,
+        "number_of_trades": 101,
+        "return": -0.11123567431712156,
+        "sharpe": -2.190671234405795,
+        "max_drawdown": 0.12915327178567326,
+        "win_rate": 0.3465346534653465,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 272,
+        "number_of_trades": 161,
+        "return": -0.09372235417738861,
+        "sharpe": -0.3963490975192923,
+        "max_drawdown": 0.1997818508105843,
+        "win_rate": 0.422360248447205,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "assignment_diagnostics": {
+        "unassigned_observations": 50,
+        "unassigned_trades": 21
+      }
+    },
+    "mean_reversion": {
+      "BULL_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 583,
+        "number_of_trades": 216,
+        "return": -0.16762367190945382,
+        "sharpe": -0.9191999671629314,
+        "max_drawdown": 0.22837114324700092,
+        "win_rate": 0.4583333333333333,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BULL_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 388,
+        "number_of_trades": 163,
+        "return": -0.17346342539469295,
+        "sharpe": -1.2978633132400539,
+        "max_drawdown": 0.20787037455927937,
+        "win_rate": 0.5153374233128835,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 199,
+        "number_of_trades": 45,
+        "return": 0.02216162534187882,
+        "sharpe": 0.6970067763615174,
+        "max_drawdown": 0.029343049859714476,
+        "win_rate": 0.6,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 272,
+        "number_of_trades": 102,
+        "return": -0.035708770012192304,
+        "sharpe": -0.08163125490640182,
+        "max_drawdown": 0.17068014493048422,
+        "win_rate": 0.5882352941176471,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "assignment_diagnostics": {
+        "unassigned_observations": 50,
+        "unassigned_trades": 16
+      }
+    },
+    "momentum": {
+      "BULL_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 583,
+        "number_of_trades": 285,
+        "return": 0.0008778753025411312,
+        "sharpe": 0.09713271528026828,
+        "max_drawdown": 0.2930133951600228,
+        "win_rate": 0.3649122807017544,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BULL_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 388,
+        "number_of_trades": 168,
+        "return": 0.4155363458998329,
+        "sharpe": 1.215112082143167,
+        "max_drawdown": 0.22598044461991462,
+        "win_rate": 0.3630952380952381,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 199,
+        "number_of_trades": 119,
+        "return": -0.040156025408774054,
+        "sharpe": -0.16070396153320418,
+        "max_drawdown": 0.19939845586358684,
+        "win_rate": 0.3697478991596639,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 272,
+        "number_of_trades": 112,
+        "return": 0.1537115096568029,
+        "sharpe": 0.6202380196585447,
+        "max_drawdown": 0.17338532161639653,
+        "win_rate": 0.4107142857142857,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "assignment_diagnostics": {
+        "unassigned_observations": 50,
+        "unassigned_trades": 20
+      }
+    },
+    "trend_following": {
+      "BULL_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 583,
+        "number_of_trades": 245,
+        "return": -0.010504765442720498,
+        "sharpe": 0.07116030338588274,
+        "max_drawdown": 0.39853151635287676,
+        "win_rate": 0.3306122448979592,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BULL_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 388,
+        "number_of_trades": 167,
+        "return": 0.7491080575463582,
+        "sharpe": 1.7820285271331513,
+        "max_drawdown": 0.2295961111657211,
+        "win_rate": 0.38922155688622756,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_LOW": {
+        "status": "RELIABLE",
+        "number_of_observations": 199,
+        "number_of_trades": 121,
+        "return": -0.407187881413257,
+        "sharpe": -3.018331447466369,
+        "max_drawdown": 0.4537850284402184,
+        "win_rate": 0.2727272727272727,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "BEAR_HIGH": {
+        "status": "RELIABLE",
+        "number_of_observations": 272,
+        "number_of_trades": 119,
+        "return": 0.1754230327192403,
+        "sharpe": 0.6947848389582935,
+        "max_drawdown": 0.22672357551998112,
+        "win_rate": 0.31092436974789917,
+        "observation_threshold_met": true,
+        "trade_threshold_met": true
+      },
+      "assignment_diagnostics": {
+        "unassigned_observations": 50,
+        "unassigned_trades": 0
+      }
+    }
+  },
+  "sample_size_warnings": [],
+  "hypothesis_assessment": {
+    "conclusion": "SUPPORTIVE",
+    "hypothesis": "Different market contexts can favor different strategy families.",
+    "momentum_dominant_across_all_periods": false,
+    "temporal_winners": {
+      "fold_1": "trend_following",
+      "fold_2": "mean_reversion",
+      "fold_3": "mean_reversion"
+    },
+    "strategy_winning_periods": {
+      "breakout": [],
+      "mean_reversion": [
+        "fold_2",
+        "fold_3"
+      ],
+      "momentum": [],
+      "trend_following": [
+        "fold_1"
+      ]
+    },
+    "different_strategies_win_different_periods": true,
+    "regime_winners_with_material_sharpe_spread": {
+      "BEAR_HIGH": "trend_following",
+      "BEAR_LOW": "mean_reversion",
+      "BULL_HIGH": "trend_following",
+      "BULL_LOW": "momentum"
+    },
+    "regime_sharpe_spreads": {
+      "BEAR_HIGH": 1.0911339364775858,
+      "BEAR_LOW": 3.7153382238278865,
+      "BULL_HIGH": 3.079891840373205,
+      "BULL_LOW": 2.47102542224592
+    },
+    "different_strategies_win_different_regimes": true,
+    "performance_concentrated_in_small_number_of_stocks": true,
+    "stock_positive_return_concentration": {
+      "breakout": 1.0,
+      "mean_reversion": 0.6788711030977665,
+      "momentum": 0.8215818925713432,
+      "trend_following": 0.8883878983993699
+    },
+    "median_positive_return_concentration": 0.8549848954853565,
+    "parameter_sensitivity_classification_counts": {
+      "BOUNDARY": 3,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "SENSITIVE": 1,
+      "STABLE": 0
+    },
+    "explanation": "The conclusion uses only differences in yearly return leaders and reliable regime Sharpe leaders. It is descriptive and does not alter strategy parameters or optimization results."
+  },
+  "integrity_confirmations": {
+    "test_2026_accessed": false,
+    "optimization_results_unchanged": true,
+    "database_unchanged": true,
+    "features_unchanged": true,
+    "augmentation_windows_unchanged": true,
+    "strategy_rules_unchanged": true,
+    "backtesting_accounting_unchanged": true
+  }
+}

@@ -1,0 +1,6 @@
+provider: upstox
+api_version: v3
+frequency: daily
+start_date: "2020-01-01"
+raw_data_dir: data/raw/stocks
+provenance_dir: data/metadata/provenance

@@ -1,0 +1,26 @@
+strategies:
+  - name: "momentum"
+    enabled: true
+    params:
+      lookback_days: 20
+      threshold: 0.05
+  - name: "trend_following"
+    enabled: true
+    params:
+      fast_window: 20
+      slow_window: 50
+      crossover_threshold: 0.0
+      require_regime_confirmation: true
+  - name: "mean_reversion"
+    enabled: true
+    params:
+      rsi_window: 14
+      oversold_rsi: 30
+      overbought_rsi: 70
+      lower_percent_b: 0.0
+      upper_percent_b: 1.0
+  - name: "breakout"
+    enabled: true
+    params:
+      lookback_days: 20
+      breakout_multiplier: 1.5
